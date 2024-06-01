@@ -104,7 +104,6 @@ const TeamComponent = () => {
     color: "#016cec",
   };
 
-
   const handleCoreTeamMouseEnter = () => {
     setIsHoveredCoreTeam(true);
     console.log("Entered mouse");
@@ -118,7 +117,8 @@ const TeamComponent = () => {
     <div
       onMouseEnter={handleCoreTeamMouseEnter}
       onMouseLeave={handleCoreTeamMouseLeave}
-      style={isHoveredCoreTeam ? {cursor:"pointer"} : {cursor:"auto"}}
+      style={isHoveredCoreTeam ? { cursor: "pointer" } : { cursor: "auto" }}
+      className="m-2"
     >
       <div
         class=""
