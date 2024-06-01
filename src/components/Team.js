@@ -6,7 +6,17 @@ const Team = () => {
 
   const list = [1, 2, 3, 4, 5, 6, 7, 8];
 
+  const headerStyle = {
+    fontWeight: 700,
+    fontSize: "45px"
+  }
+
+  const sectionStyle = {
+    fontFamily: '"Poppins", sans-serif',
+  }
+
   return (
+    <div style={sectionStyle}>
     <div
       className="container"
       style={{
@@ -16,7 +26,7 @@ const Team = () => {
         alignItems: "center",
       }}
     >
-      <h2 class="mt-4 mb-0">Team Leader</h2>
+      <h2 class="mt-4 mb-0" style={headerStyle}>Team Leader</h2>
       <div
         className="row"
         style={{ display: "flex", justifyContent: "center" }}
@@ -27,7 +37,7 @@ const Team = () => {
           </div>
         ))}
       </div>
-      <h2 class="mt-5 mb-0"> Core Team</h2>
+      <h2 class="mt-5 mb-0" style={headerStyle}> Core Team</h2>
 
       <div class="row">
         {list.map((item) => (
@@ -36,6 +46,7 @@ const Team = () => {
           </div>
         ))}
       </div>
+    </div>
     </div>
   );
 };
