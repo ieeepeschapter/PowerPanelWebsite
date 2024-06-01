@@ -11,12 +11,9 @@ const Team = () => {
     fontSize: "45px"
   }
 
-  const sectionStyle = {
-    fontFamily: '"Poppins", sans-serif',
-  }
-
+ 
   return (
-    <div style={sectionStyle}>
+    <div >
     <div
       className="container"
       style={{
