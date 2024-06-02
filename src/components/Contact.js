@@ -41,7 +41,7 @@ const Contact = () => {
 
           <div class="social-media">
             <p>Connect with us :</p>
-            <div class="social-icon">
+            <div class="social-icons">
               <a href="https://github.com/sandeep03edu" target="blank">
                 <i class="fab fa-github"></i>
               </a>

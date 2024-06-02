@@ -1,10 +1,11 @@
 import React from "react";
 import "../index.css";
+import { Link } from 'react-router-dom';  
 
 const Navbar = () => {
   return (
     <nav
-      className="navbar navbar-expand-lg bg-body-tertiary"
+      className="navbar sticky-top navbar-expand-lg bg-body-tertiary"
       style={{
         display: "flex",
         justifyContent: "center",
@@ -13,7 +14,14 @@ const Navbar = () => {
       }}
     >
       <div className="container-fluid ">
-        <div style={{ display: "flex", flex: 10, alignItems: "flex-start" , height:"24px"}}>
+        <div
+          style={{
+            display: "flex",
+            flex: 10,
+            alignItems: "flex-start",
+            height: "24px",
+          }}
+        >
           <img
             src="https://marketplace.canva.com/EAFYecj_1Sc/1/0/1600w/canva-cream-and-black-simple-elegant-catering-food-logo-2LPev1tJbrg.jpg"
             alt="Logo"
@@ -41,34 +49,34 @@ const Navbar = () => {
         >
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="/">
+              <Link className="nav-link active" aria-current="page" to="/">
                 Home
-              </a>
+              </Link>
             </li>
             <li className="nav-item" style={{}}>
-              <a className="nav-link" href="/">
+              <Link className="nav-link" to="/events">
                 Events
-              </a>
+              </Link>
             </li>
             <li className="nav-item" style={{}}>
-              <a className="nav-link" href="/">
+              <Link className="nav-link" to="/members">
                 Members
-              </a>
+              </Link>
             </li>
             <li className="nav-item" style={{}}>
-              <a className="nav-link" href="/">
+              <Link className="nav-link" to="/sponsors">
                 Sponsors
-              </a>
+              </Link>
             </li>
             <li className="nav-item" style={{}}>
-              <a className="nav-link" href="/">
+              <Link className="nav-link" to="/contact">
                 Contact
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/">
+              <Link className="nav-link" to="/">
                 Join
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
