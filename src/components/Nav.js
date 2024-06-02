@@ -1,6 +1,6 @@
 import React from "react";
 import "../index.css";
-import { Link } from 'react-router-dom';  
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -11,6 +11,9 @@ const Navbar = () => {
         justifyContent: "center",
         width: "100%",
         padding: "10px",
+        background:
+          "linear-gradient(270deg, rgb(252, 176, 76),  rgb(252, 176, 76), rgb(252, 115, 60),  rgb(252, 176, 76))",
+        fontSize: "1.2rem",
       }}
     >
       <div className="container-fluid ">
@@ -47,7 +50,10 @@ const Navbar = () => {
           id="navbarNav"
           style={{ flex: 1 }}
         >
-          <ul className="navbar-nav">
+          <ul
+            className="navbar-nav"
+            style={{ fontFamily: '"PT Serif", serif' }}
+          >
             <li className="nav-item">
               <Link className="nav-link active" aria-current="page" to="/">
                 Home

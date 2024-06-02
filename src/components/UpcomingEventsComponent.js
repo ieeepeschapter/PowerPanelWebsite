@@ -4,7 +4,7 @@ import "./UpcomgEvents.css";
 
 const UpcomingEventsComponent = () => {
   return (
-    <div><div class="card my-3">
+    <div><div class="event_card my-3">
     <div class="card__header ">
       <img
         src="https://ieeentc.github.io/Events/96706b2d1d420e0290e8ace196fcd909.jpg"

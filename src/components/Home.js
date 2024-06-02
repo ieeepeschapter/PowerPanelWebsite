@@ -1,9 +1,22 @@
-import React from 'react'
+import React from "react";
+import HomeSlider from "./HomePage/HomeSlider";
+import HomeIntro from "./HomePage/HomeIntro";
+import Wave from "react-wavify";
+import HomeAbout from "./HomePage/HomeAbout";
+import HomeUpcomingEvents from "./HomePage/HomeUpcomingEvents";
 
 const Home = () => {
   return (
-    <div>Home</div>
-  )
-}
+    <div>
+      <HomeSlider />
 
-export default Home
+      <HomeIntro />
+
+      <HomeAbout />
+
+      <HomeUpcomingEvents/>
+    </div>
+  );
+};
+
+export default Home;
