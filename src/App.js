@@ -13,8 +13,8 @@ function App() {
     <div style={textFamilyStyle}> 
     <Navbar/>
     {/* <Team/> */}
-    {/* <Events/> */}
-    <Contact/>
+    <Events/>
+    {/* <Contact/> */}
     </div>
   );
 }

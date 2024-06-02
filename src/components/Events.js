@@ -27,37 +27,41 @@ const Events = () => {
               <h3 class="my-3">Upcoming Events</h3>
             </div>
           </div>
-          <div class="row mt-4">
-            {upcomingEvents.map((item) => (
-              <div class="col-md-6 on-hover">
-                <div class="card border-0 mb-4">
-                  <a href="#">
-                    <img
-                      class="card-img-top"
-                      src="https://ieeentc.github.io/Events/96706b2d1d420e0290e8ace196fcd909.jpg"
-                      alt="wrappixel kit"
-                    ></img>
-                  </a>
-                  <div class="date-pos bg-info-gradiant p-3 m-1 d-inline-block text-center rounded text-white position-absolute">
-                    Oct<span class="d-block">23</span>
+          <section class="cards-section">
+            <div class="row mt-2">
+              {upcomingEvents.map((item) => (
+                  <div className="col-md-6 ">
+                  <div class="card my-3">
+                    <div class="card__header ">
+                      <img
+                        src="https://ieeentc.github.io/Events/96706b2d1d420e0290e8ace196fcd909.jpg"
+                        alt="card__image"
+                        class="card__image"
+                        width="600"
+                      />
+                    </div>
+                    <div class="card__body">
+                      <h4>Optical Fiber-based Plasmonic Sensors for Microorganism Detection</h4>
+                      <p >
+                        Event is organized by IEEE Nanotechnology Council Student Chapter, Indian Institute of Technology, Patna on 6th August 2021, 4:00 PM (IST)
+                      </p>
+                    </div>
+                    <div class="card__footer">
+                      <a href="/">
+                        <div class="button-center">
+                          <div class="readmore">
+                            Register Now <i class="fa-solid fa-up-right-from-square"></i> 
+                          </div>
+                        </div>
+                      </a>
+                    </div>
                   </div>
-                  <h5 class="font-weight-medium mt-3">
-                    <a href="#" class="text-decoration-none link">
-                      Optical Fiber-based Plasmonic Sensors for Microorganisms
-                      Detection
-                    </a>
-                  </h5>
-
-                  <a
-                    href="#"
-                    class="text-decoration-none linking text-themecolor mt-2"
-                  >
-                    Register Here
-                  </a>
                 </div>
-              </div>
-            ))}
-          </div>
+
+             
+              ))}
+            </div>
+          </section>
         </div>
       </div>
       {/* // Past Events Starts here */}
