@@ -9,7 +9,7 @@ import { Routes, Route } from "react-router-dom";
 
 function App() {
   const textFamilyStyle = {
-    fontFamily: '"Poppins", sans-serif',
+    fontFamily: '"Playfair Display SC", serif',
   };
   return (
     <div style={textFamilyStyle}>

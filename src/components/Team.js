@@ -7,8 +7,7 @@ const Team = () => {
   const list = [1, 2, 3, 4, 5, 6, 7, 8];
 
   const headerStyle = {
-    fontWeight: 700,
-    fontSize: "45px",
+    fontWeight: 500,
   };
 
   return (
@@ -22,7 +21,7 @@ const Team = () => {
           alignItems: "center",
         }}
       >
-        <h2 class="mt-4 mb-0" style={headerStyle}>
+        <h2 class="mt-3 mb-0" style={headerStyle}>
           Team Leader
         </h2>
         <div

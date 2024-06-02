@@ -6,12 +6,12 @@ const Sponsors = () => {
     <div className="container">
       {/* Sponsorship level Starts */}
 
-      <h2 className="d-flex mt-5 mb-3 justify-content-center">
+      <h2 className="d-flex mt-3  justify-content-center">
         Sponsorship Levels
       </h2>
 
       <div className="table-responsive">
-        <table class="table table-success table-striped-columns my-4">
+        <table class="table table-success table-striped-columns mb-2 mt-4">
           <colgroup>
             <col style={{ width: "15%" }}></col>
             <col style={{ width: "75%" }}></col>

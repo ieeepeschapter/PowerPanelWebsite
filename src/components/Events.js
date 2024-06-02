@@ -24,7 +24,7 @@ const Events = () => {
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-md-8 text-center">
-              <h3 class="my-3">Upcoming Events</h3>
+              <h3 class="mt-3">Upcoming Events</h3>
             </div>
           </div>
           <section class="cards-section">
