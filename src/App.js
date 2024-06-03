@@ -7,22 +7,39 @@ import Team from "./components/Team";
 import Sponsors from "./components/Sponsors";
 import { Routes, Route } from "react-router-dom";
 import Footer from "./components/Footer";
+import { useEffect, useState } from "react";
+import Loader from "./components/Utils/Loader";
 
 function App() {
   const textFamilyStyle = {
     fontFamily: '"Playfair Display SC", serif',
   };
+
+  const [loaderLoading, setLoaderLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoaderLoading(false);
+    }, 2500);
+  }, []);
+
   return (
     <div style={textFamilyStyle}>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/members" element={<Team />} />
-        <Route path="/sponsors" element={<Sponsors />} />
-        <Route path="/events" element={<Events />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-      <Footer />
+      {loaderLoading ? (
+        <Loader />
+      ) : (
+        <>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/members" element={<Team />} />
+            <Route path="/sponsors" element={<Sponsors />} />
+            <Route path="/events" element={<Events />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+          <Footer />
+        </>
+      )}
     </div>
   );
 }
