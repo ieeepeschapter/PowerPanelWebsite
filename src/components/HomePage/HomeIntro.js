@@ -14,7 +14,7 @@ const HomeIntro = () => {
         </div>
 
         <div
-          className="col-md-8"
+          className="col-md-8 my-3"
           style={{
             display: "flex",
             flexDirection: "column",
