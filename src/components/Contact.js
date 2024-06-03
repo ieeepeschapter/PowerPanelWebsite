@@ -48,7 +48,9 @@ const Contact = () => {
                 <p>Indian Institute of Technology, Patna</p>
               </div>
               <div className="information">
-                <p>ieeepeschapter@iitp.ac.in</p>
+                <a href="mailto:ieeepeschapter@iitp.ac.in">
+                  ieeepeschapter@iitp.ac.in
+                </a>
               </div>
             </div>
 

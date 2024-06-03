@@ -95,16 +95,16 @@ const Footer = () => {
             <Link to="/" style={{ width: "fit-content" }}>
               <FooterQuickLinkItem label={"Home"} />
             </Link>
-            <Link to="/" style={{ width: "fit-content" }}>
+            <Link to="/events" style={{ width: "fit-content" }}>
               <FooterQuickLinkItem label={"Events"} />
             </Link>
-            <Link to="/" style={{ width: "fit-content" }}>
+            <Link to="/members" style={{ width: "fit-content" }}>
               <FooterQuickLinkItem label={"Members"} />
             </Link>
-            <Link to="/" style={{ width: "fit-content" }}>
-              <FooterQuickLinkItem label={"Sopnsors"} />
+            <Link to="/sponsors" style={{ width: "fit-content" }}>
+              <FooterQuickLinkItem label={"Spnsors"} />
             </Link>
-            <Link to="/" style={{ width: "fit-content" }}>
+            <Link to="/contact" style={{ width: "fit-content" }}>
               <FooterQuickLinkItem label={"Contact"} />
             </Link>
           </div>
