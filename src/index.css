@@ -11,3 +11,30 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.h-line {
+  width: 80px;
+  height: 4px;
+  margin: 0px auto;
+  border-radius: 50px;
+  background-image: linear-gradient(
+    to right top,
+    #ff6e00,
+    #ff8e00,
+    #ffac00,
+    #ffc900,
+    #ffe600
+  );
+}
+
+.span-second {
+  color: rgb(255, 117, 26);
+  font-family: "Cinzel", serif;
+}
+
+.span-quick-links{
+  background-color: rgb(252, 115, 60);
+  height: 2px;
+  width: 50px;
+}

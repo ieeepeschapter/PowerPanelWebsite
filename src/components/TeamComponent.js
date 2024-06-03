@@ -106,12 +106,10 @@ const TeamComponent = () => {
 
   const handleCoreTeamMouseEnter = () => {
     setIsHoveredCoreTeam(true);
-    console.log("Entered mouse");
   };
 
   const handleCoreTeamMouseLeave = () => {
     setIsHoveredCoreTeam(false);
-    console.log("Exited mouse");
   };
   return (
     <div

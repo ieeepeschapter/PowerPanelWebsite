@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import TeamComponent from "./TeamComponent";
+import TwoLabelHeader from "./Utils/TwoLabelHeader";
 
 const Team = () => {
   const teamLeader = [1];
@@ -22,7 +23,7 @@ const Team = () => {
         }}
       >
         <h2 class="mt-3 mb-0" style={headerStyle}>
-          Team Leader
+          <TwoLabelHeader first={"Team"} second={"Leader"} />
         </h2>
         <div
           className="row"
@@ -35,8 +36,7 @@ const Team = () => {
           ))}
         </div>
         <h2 class="mt-5 mb-0" style={headerStyle}>
-          {" "}
-          Core Team
+        <TwoLabelHeader first={"Core"} second={"Team"} />
         </h2>
 
         <div class="row">

@@ -6,6 +6,7 @@ import Navbar from "./components/Nav";
 import Team from "./components/Team";
 import Sponsors from "./components/Sponsors";
 import { Routes, Route } from "react-router-dom";
+import Footer from "./components/Footer";
 
 function App() {
   const textFamilyStyle = {
@@ -15,15 +16,13 @@ function App() {
     <div style={textFamilyStyle}>
       <Navbar />
       <Routes>
-        <Route path="/" element={ <Home/> } />
-        <Route path="/members" element={ <Team/> } />
+        <Route path="/" element={<Home />} />
+        <Route path="/members" element={<Team />} />
         <Route path="/sponsors" element={<Sponsors />} />
         <Route path="/events" element={<Events />} />
         <Route path="/contact" element={<Contact />} />
-
       </Routes>
-
-    
+      <Footer />
     </div>
   );
 }

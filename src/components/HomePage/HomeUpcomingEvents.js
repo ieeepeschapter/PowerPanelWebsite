@@ -1,5 +1,6 @@
 import React from "react";
 import UpcomingEventsComponent from "../UpcomingEventsComponent";
+import TwoLabelHeader from "../Utils/TwoLabelHeader";
 
 const HomeUpcomingEvents = () => {
   const upcomingEvents = [1, 2];
@@ -8,7 +9,7 @@ const HomeUpcomingEvents = () => {
       className="container my-5"
       style={{ display: "flex", flexDirection: "column", alignItems: "center" }}
     >
-      <h3>Upcoming Events</h3>
+      <TwoLabelHeader first={"Upcoming"} second={"Events"} />
 
       <div className="row">
         {upcomingEvents.map((item) => (

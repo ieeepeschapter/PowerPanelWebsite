@@ -6,6 +6,7 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import "./UpcomgEvents.css";
 import UpcomingEventsComponent from "./UpcomingEventsComponent";
+import TwoLabelHeader from "./Utils/TwoLabelHeader";
 
 const Events = () => {
   const pastEvents = [1, 2, 3, 4, 5, 6, 7, 8, 9];
@@ -25,7 +26,9 @@ const Events = () => {
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-md-8 text-center">
-              <h3 class="mt-3">Upcoming Events</h3>
+              <div class="mt-3">
+                <TwoLabelHeader first={"Upcoming"} second={"Events"} />
+              </div>
             </div>
           </div>
           <section class="cards-section">
@@ -41,7 +44,9 @@ const Events = () => {
       </div>
       {/* // Past Events Starts here */}
       <div className="blog-home2 ">
-        <h3 class="my-4 row justify-content-center">Past Events</h3>
+        <div class="my-4 row text-center">
+          <TwoLabelHeader first={"Past"} second={"Events"} />
+        </div>
         <VerticalTimeline lineColor={"#cecece"}>
           {pastEvents.map((item) => (
             <VerticalTimelineElement

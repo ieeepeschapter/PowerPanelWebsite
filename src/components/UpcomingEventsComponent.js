@@ -28,7 +28,7 @@ const UpcomingEventsComponent = () => {
       <a href="/">
         <div class="button-center">
           <div class="readmore">
-            Register Now{" "}
+            Register Now
             <i class="fa-solid fa-up-right-from-square"></i>
           </div>
         </div>

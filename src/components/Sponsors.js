@@ -1,13 +1,22 @@
 import React from "react";
+import TwoLabelHeader from "./Utils/TwoLabelHeader";
 
 const Sponsors = () => {
   const ourSponsors = [1, 2, 3, 4, 5, 6, 7, 8, 9, 19];
   return (
-    <div className="container">
+    <div
+      className="container"
+      style={{
+        padding: "8px",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+      }}
+    >
       {/* Sponsorship level Starts */}
 
-      <h2 className="d-flex mt-3  justify-content-center">
-        Sponsorship Levels
+      <h2 className=" mt-3  text-center">
+        <TwoLabelHeader first={"Sponsorship"} second={"Levels"} />
       </h2>
 
       <div className="table-responsive">
@@ -86,7 +95,9 @@ const Sponsors = () => {
 
       {/* Our Sponsors Starts*/}
 
-      <h2 className="d-flex mb-3 mt-5 justify-content-center">Our Sponsors</h2>
+      <h2 className=" mb-3 mt-5 text-center">
+        <TwoLabelHeader first={"Our"} second={"Sponsor"} />
+      </h2>
 
       <div class="">
         <div class="" style={{ display: "flex", flexWrap: "wrap" }}>
@@ -127,8 +138,8 @@ const Sponsors = () => {
 
       {/* Become a Sponsor Starts*/}
 
-      <h2 className="d-flex mt-5 mb-3 justify-content-center">
-        Become a Sponsor
+      <h2 className="mt-5 mb-3 text-center">
+        <TwoLabelHeader first={"Become a"} second={"Sponsor"} />
       </h2>
 
       <p class="d-flex justify-content-center">

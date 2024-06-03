@@ -1,7 +1,6 @@
 import React from "react";
 import HomeSlider from "./HomePage/HomeSlider";
 import HomeIntro from "./HomePage/HomeIntro";
-import Wave from "react-wavify";
 import HomeAbout from "./HomePage/HomeAbout";
 import HomeUpcomingEvents from "./HomePage/HomeUpcomingEvents";
 
@@ -14,7 +13,7 @@ const Home = () => {
 
       <HomeAbout />
 
-      <HomeUpcomingEvents/>
+      <HomeUpcomingEvents />
     </div>
   );
 };
