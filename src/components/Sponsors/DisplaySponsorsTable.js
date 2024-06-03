@@ -3,7 +3,7 @@ import TwoLabelHeader from "../Utils/TwoLabelHeader";
 
 const DisplaySponsorsTable = ({ sponsorshipLevel }) => {
   return (
-    <>
+    <div style={{width:"100%"}}>
       <h2 className=" mt-3  text-center">
         <TwoLabelHeader first={"Sponsorship"} second={"Levels"} />
       </h2>
@@ -38,7 +38,7 @@ const DisplaySponsorsTable = ({ sponsorshipLevel }) => {
           </tbody>
         </table>
       </div>
-    </>
+    </div>
   );
 };
 

@@ -31,7 +31,7 @@ const Footer = () => {
           <div className="mx-3">
             <img src="https://ieeentc.github.io/Home/3b99491f4acc60738aab2c475f041902.jpg"></img>
             <div
-              className="mt-3"
+              className="my-3"
               style={{ display: "flex", justifyContent: "space-around" }}
             >
               <div className="social-icons">

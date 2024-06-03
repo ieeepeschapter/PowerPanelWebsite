@@ -10,7 +10,7 @@ const HomeIntro = () => {
     >
       <div className="row px-2 py-4">
         <div className="col-md-4">
-          <img src="https://ieeentc.github.io/Home/3b99491f4acc60738aab2c475f041902.jpg" />
+          <img src="./assets/logo2.jpg" />
         </div>
 
         <div

@@ -26,7 +26,7 @@ const Navbar = () => {
           }}
         >
           <img
-            src="https://ieeentc.github.io/d0588d7aaf3020127d74f323f40b29ee.jpg"
+            src="./assets/logo1.jpg"
             alt="Logo"
             width="auto"
             height="40"
