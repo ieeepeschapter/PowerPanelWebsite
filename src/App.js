@@ -10,6 +10,8 @@ import Footer from "./components/Footer";
 import { useEffect, useState } from "react";
 import Loader from "./components/Utils/Loader";
 
+
+
 function App() {
   const textFamilyStyle = {
     fontFamily: '"Playfair Display SC", serif',
@@ -20,7 +22,7 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setLoaderLoading(false);
-    }, 2500);
+    }, 200);
   }, []);
 
   return (

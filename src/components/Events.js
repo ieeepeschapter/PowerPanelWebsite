@@ -7,16 +7,26 @@ import "react-vertical-timeline-component/style.min.css";
 import "./UpcomgEvents.css";
 import UpcomingEventsComponent from "./UpcomingEventsComponent";
 import TwoLabelHeader from "./Utils/TwoLabelHeader";
+import { useEffect, useState } from "react";
+import { sortAndSeparateEvents } from "../data/utils/EventsSorted";
+import data from "../data/raw/events.json";
 
 const Events = () => {
-  const pastEvents = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-  const upcomingEvents = [1, 2, 3];
+  const [pastEvents, setPastEvents] = useState([]);
+  const [upcomingEvents, setUpcomingEvents] = useState([]);
 
   const headerStyle = {
     fontWeight: 700,
     fontSize: "45px",
     textAlign: "center",
   };
+
+  useEffect(() => {
+    const sortedEvents = sortAndSeparateEvents(data.events);
+    setPastEvents(sortedEvents.pastEvents);
+    setUpcomingEvents(sortedEvents.upcomingEvents);
+    return () => {};
+  }, []);
 
   return (
     // Upcoming Events Starts here
@@ -35,20 +45,23 @@ const Events = () => {
             <div className="row mt-2">
               {upcomingEvents.map((item) => (
                 <div className="col-md-6 ">
-                  <UpcomingEventsComponent />
+                  <UpcomingEventsComponent event={item} />
                 </div>
               ))}
             </div>
           </section>
         </div>
       </div>
-      {/* // Past Events Starts here */}
+      {/* // Past Events Header Starts here */}
       <div className="blog-home2 ">
         <div className="my-4 row text-center">
           <TwoLabelHeader first={"Past"} second={"Events"} />
         </div>
+        {/* // Past Events Header ends here */}
+
+        {/* // Past Events Starts here */}
         <VerticalTimeline lineColor={"#cecece"}>
-          {pastEvents.map((item) => (
+          {pastEvents.map((event) => (
             <VerticalTimelineElement
               //   className="vertical-timeline-element--work"
               contentStyle={{
@@ -60,14 +73,14 @@ const Events = () => {
               contentArrowStyle={{
                 borderRight: "7px solid  rgb(252, 115, 60)",
               }}
-              date="May 23 2023"
+              date={event.date}
               iconStyle={{
                 background:
                   "linear-gradient(270deg, rgb(252, 115, 60), rgb(252, 176, 76))",
               }}
             >
               <img
-                src="https://ieeentc.github.io/Events/96706b2d1d420e0290e8ace196fcd909.jpg"
+                src={`/assets/${event.image}`}
                 alt=""
                 // className="col-md-12 p-0 m-0"
                 className="card-img-top"
