@@ -22,17 +22,22 @@ const Navbar = () => {
             display: "flex",
             flex: 10,
             alignItems: "flex-start",
-            height: "24px",
+            height: "40px",
           }}
         >
           <img
-            src="https://marketplace.canva.com/EAFYecj_1Sc/1/0/1600w/canva-cream-and-black-simple-elegant-catering-food-logo-2LPev1tJbrg.jpg"
+            src="https://ieeentc.github.io/d0588d7aaf3020127d74f323f40b29ee.jpg"
             alt="Logo"
-            width="30"
-            height="24"
+            width="auto"
+            height="40"
             class="d-inline-block align-text-top"
           ></img>
-          <p className="mx-2">Navbar</p>
+          <p
+            className="mx-2"
+            style={{ height: "100%", display: "flex", alignItems: "center" }}
+          >
+            IEEE NTC
+          </p>
         </div>
         <button
           className="navbar-toggler"
