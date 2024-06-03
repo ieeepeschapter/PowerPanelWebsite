@@ -87,11 +87,7 @@ const Events = () => {
               ></img>
             </VerticalTimelineElement>
           ))}
-          {/* <VerticalTimelineElement
-            //   className="vertical-timeline-element--work"
-            iconStyle={{ background: "linear-gradient(270deg, rgb(252, 115, 60), rgb(252, 176, 76))" }}
-            // icon={<WorkIcon />}
-          ></VerticalTimelineElement> */}
+          
         </VerticalTimeline>
       </div>
     </div>

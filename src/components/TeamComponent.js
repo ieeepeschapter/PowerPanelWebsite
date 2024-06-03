@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const TeamComponent = () => {
+const TeamComponent = ({ member }) => {
   const [isHoveredCoreTeam, setIsHoveredCoreTeam] = useState(false);
 
   const singlePersonStyle = {
@@ -26,6 +26,8 @@ const TeamComponent = () => {
     transition: "padding 0.3s",
     paddingTop: "10px",
     paddingBottom: "10px",
+    width: "fit-content",
+    height: "max-content",
   };
 
   const personImageHoveredDivStyle = {
@@ -36,6 +38,8 @@ const TeamComponent = () => {
     transition: "padding 0.3s",
     paddingTop: "10px",
     paddingBottom: "10px",
+    width: "fit-content",
+    height: "fit-content",
     // padding:"10px"
   };
 
@@ -112,11 +116,17 @@ const TeamComponent = () => {
     setIsHoveredCoreTeam(false);
   };
   return (
-    <div
+    <a
       onMouseEnter={handleCoreTeamMouseEnter}
       onMouseLeave={handleCoreTeamMouseLeave}
-      style={isHoveredCoreTeam ? { cursor: "pointer" } : { cursor: "auto" }}
-      className="m-2"
+      style={
+        isHoveredCoreTeam
+          ? { cursor: "pointer", width: "100%" }
+          : { cursor: "auto", width: "100%" }
+      }
+      className="m-0 p-0"
+      href={member.linkedin}
+      target="blank"
     >
       <div
         className=""
@@ -129,12 +139,12 @@ const TeamComponent = () => {
           }
         >
           <img
-            src="https://girlscript-asansol.netlify.app/Assets/team/debdeep.jpeg"
+            src={`/assets/${member.image}`}
             style={
               isHoveredCoreTeam ? personImageHoveredStyle : personImageStyle
             }
             alt=""
-            className="col-lg-6 col-xl-6 col-md-6"
+            className="col-md-6"
           ></img>
           <span
             className=""
@@ -145,14 +155,14 @@ const TeamComponent = () => {
         </div>
         <div className="">
           <h3 className="" style={fullnameStyle}>
-            Soumali Gorai
+            {member.name}
           </h3>
           <span className="" style={specialityStyle}>
-            Chapter Lead
+            {member.title}
           </span>
         </div>
       </div>
-    </div>
+    </a>
   );
 };
 
