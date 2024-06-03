@@ -24,7 +24,7 @@ const Sponsors = () => {
         alignItems: "center",
       }}
     >
-      <DisplaySponsorsTable sponsorshipLevel={sponsorshipLevel}/>
+      <DisplaySponsorsTable sponsorshipLevel={sponsorshipLevel} />
 
       <OurSponsors ourSponsors={ourSponsors} />
 
@@ -32,9 +32,14 @@ const Sponsors = () => {
         <TwoLabelHeader first={"Become a"} second={"Sponsor"} />
       </h2>
 
-      <h4 className="d-flex justify-content-center">
-        Contact - &nbsp;<a href="mailto:ieeepeschapter@iitp.ac.in"> ieeepeschapter@iitp.ac.in</a>
-      </h4>
+      <h5 className="d-flex justify-content-center">
+        Contact: &nbsp;
+        <span>
+          <a href="mailto:ieeepeschapter@iitp.ac.in">
+            ieeepeschapter@iitp.ac.in
+          </a>
+        </span>
+      </h5>
     </div>
   );
 };

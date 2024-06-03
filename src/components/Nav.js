@@ -53,7 +53,6 @@ const Navbar = () => {
         <div
           className="collapse navbar-collapse"
           id="navbarNav"
-          style={{ flex: 1 }}
         >
           <ul
             className="navbar-nav"
