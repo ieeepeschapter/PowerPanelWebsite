@@ -22,7 +22,7 @@ const Team = () => {
           alignItems: "center",
         }}
       >
-        <h2 class="mt-3 mb-0" style={headerStyle}>
+        <h2 className="mt-3 mb-0" style={headerStyle}>
           <TwoLabelHeader first={"Team"} second={"Leader"} />
         </h2>
         <div
@@ -30,18 +30,18 @@ const Team = () => {
           style={{ display: "flex", justifyContent: "center" }}
         >
           {teamLeader.map((item) => (
-            <div key={item} class="col-sm-6 col-lg-4 col-xl-3">
+            <div key={item} className="col-sm-6 col-lg-4 col-xl-3">
               <TeamComponent />
             </div>
           ))}
         </div>
-        <h2 class="mt-5 mb-0" style={headerStyle}>
+        <h2 className="mt-5 mb-0" style={headerStyle}>
         <TwoLabelHeader first={"Core"} second={"Team"} />
         </h2>
 
-        <div class="row">
+        <div className="row">
           {list.map((item) => (
-            <div key={item} class="col-sm-6 col-lg-4 col-xl-3">
+            <div key={item} className="col-sm-6 col-lg-4 col-xl-3">
               <TeamComponent />
             </div>
           ))}

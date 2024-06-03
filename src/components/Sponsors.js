@@ -20,7 +20,7 @@ const Sponsors = () => {
       </h2>
 
       <div className="table-responsive">
-        <table class="table table-success table-striped-columns mb-2 mt-4">
+        <table className="table table-success table-striped-columns mb-2 mt-4">
           <colgroup>
             <col style={{ width: "15%" }}></col>
             <col style={{ width: "75%" }}></col>
@@ -99,8 +99,8 @@ const Sponsors = () => {
         <TwoLabelHeader first={"Our"} second={"Sponsor"} />
       </h2>
 
-      <div class="">
-        <div class="" style={{ display: "flex", flexWrap: "wrap" }}>
+      <div className="">
+        <div className="" style={{ display: "flex", flexWrap: "wrap" }}>
           {ourSponsors.map((item) => (
             <>
               <a
@@ -142,7 +142,7 @@ const Sponsors = () => {
         <TwoLabelHeader first={"Become a"} second={"Sponsor"} />
       </h2>
 
-      <p class="d-flex justify-content-center">
+      <p className="d-flex justify-content-center">
         Contact - &nbsp;<a href="mailto:test@iitp.ac.in"> test@iitp.ac.in</a>
       </p>
       {/* Become a Sponsor Ends*/}

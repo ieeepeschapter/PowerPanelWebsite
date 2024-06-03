@@ -31,33 +31,33 @@ const Footer = () => {
           <div className="mx-3">
             <img src="https://ieeentc.github.io/Home/3b99491f4acc60738aab2c475f041902.jpg"></img>
             <div
-              class="mt-3"
+              className="mt-3"
               style={{ display: "flex", justifyContent: "space-around" }}
             >
-              <div class="social-icons">
+              <div className="social-icons">
                 <a href="https://github.com/sandeep03edu" target="blank">
-                  <i class="fab fa-github"></i>
+                  <i className="fab fa-github"></i>
                 </a>
                 <a href="https://twitter.com/sandeep03edu" target="blank">
-                  <i class="fab fa-twitter"></i>
+                  <i className="fab fa-twitter"></i>
                 </a>
                 <a
                   href="https://www.instagram.com/sandeep03edu/"
                   target="blank"
                 >
-                  <i class="fab fa-instagram"></i>
+                  <i className="fab fa-instagram"></i>
                 </a>
                 <a
                   href="https://www.linkedin.com/in/sandeep03edu/"
                   target="blank"
                 >
-                  <i class="fab fa-linkedin-in"></i>
+                  <i className="fab fa-linkedin-in"></i>
                 </a>
                 <a
                   href="https://discord.com/invite/sandeep03edu"
                   target="blank"
                 >
-                  <i class="fab fa-discord"></i>
+                  <i className="fab fa-discord"></i>
                 </a>
               </div>
             </div>
@@ -117,7 +117,7 @@ const Footer = () => {
           height: "1px",
           width: "100%",
         }}
-        class="mb-3 mt-2"
+        className="mb-3 mt-2"
       />
 
       <p className="pb-2 mx-4" style={{ color: "#bbbbbb" }}>

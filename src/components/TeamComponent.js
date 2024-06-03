@@ -119,11 +119,11 @@ const TeamComponent = () => {
       className="m-2"
     >
       <div
-        class=""
+        className=""
         style={isHoveredCoreTeam ? singlePersonHoveredStyle : singlePersonStyle}
       >
         <div
-          class="row"
+          className="row"
           style={
             isHoveredCoreTeam ? personImageHoveredDivStyle : personImageDivStyle
           }
@@ -137,17 +137,17 @@ const TeamComponent = () => {
             className="col-lg-6 col-xl-6 col-md-6"
           ></img>
           <span
-            class=""
+            className=""
             style={isHoveredCoreTeam ? iconHoveredStyle : iconStyle}
           >
-            <i class="fa-brands fa-linkedin-in"></i>
+            <i className="fa-brands fa-linkedin-in"></i>
           </span>
         </div>
-        <div class="">
-          <h3 class="" style={fullnameStyle}>
+        <div className="">
+          <h3 className="" style={fullnameStyle}>
             Soumali Gorai
           </h3>
-          <span class="" style={specialityStyle}>
+          <span className="" style={specialityStyle}>
             Chapter Lead
           </span>
         </div>

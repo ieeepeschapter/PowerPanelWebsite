@@ -22,17 +22,17 @@ const Events = () => {
     // Upcoming Events Starts here
 
     <div>
-      <div class="blog-home2 pb-5 pt-2">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-md-8 text-center">
-              <div class="mt-3">
+      <div className="blog-home2 pb-5 pt-2">
+        <div className="container">
+          <div className="row justify-content-center">
+            <div className="col-md-8 text-center">
+              <div className="mt-3">
                 <TwoLabelHeader first={"Upcoming"} second={"Events"} />
               </div>
             </div>
           </div>
-          <section class="cards-section">
-            <div class="row mt-2">
+          <section className="cards-section">
+            <div className="row mt-2">
               {upcomingEvents.map((item) => (
                 <div className="col-md-6 ">
                   <UpcomingEventsComponent />
@@ -44,7 +44,7 @@ const Events = () => {
       </div>
       {/* // Past Events Starts here */}
       <div className="blog-home2 ">
-        <div class="my-4 row text-center">
+        <div className="my-4 row text-center">
           <TwoLabelHeader first={"Past"} second={"Events"} />
         </div>
         <VerticalTimeline lineColor={"#cecece"}>
@@ -70,7 +70,7 @@ const Events = () => {
                 src="https://ieeentc.github.io/Events/96706b2d1d420e0290e8ace196fcd909.jpg"
                 alt=""
                 // className="col-md-12 p-0 m-0"
-                class="card-img-top"
+                className="card-img-top"
               ></img>
             </VerticalTimelineElement>
           ))}

@@ -30,7 +30,7 @@ const Navbar = () => {
             alt="Logo"
             width="auto"
             height="40"
-            class="d-inline-block align-text-top"
+            className="d-inline-block align-text-top"
           ></img>
           <p
             className="mx-2"

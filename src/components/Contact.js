@@ -30,62 +30,62 @@ const Contact = () => {
         alignItems: "center",
       }}
     >
-      <div class="mt-3 text-center">
+      <div className="mt-3 text-center">
         <TwoLabelHeader first={"Contact"} second={"Us"} />
       </div>
 
-      <div class="contact-container container my-3" id="contact-us">
-        <div class="form row mx-5 ">
-          <div class="contact-info col-md-6">
-            <h3 class="title">Let's get in touch</h3>
-            <p class="text">
+      <div className="contact-container container my-3" id="contact-us">
+        <div className="form row mx-5 ">
+          <div className="contact-info col-md-6">
+            <h3 className="title">Let's get in touch</h3>
+            <p className="text">
               Email us with any questions ans queries. We would be happy to
               answer your questions.
             </p>
 
-            <div class="info">
-              <div class="information">
+            <div className="info">
+              <div className="information">
                 <p>Indian Institute of Technology, Patna</p>
               </div>
-              <div class="information">
+              <div className="information">
                 <p>test@iitp.ac.in</p>
               </div>
             </div>
 
-            <div class="social-media">
+            <div className="social-media">
               <p>Connect with us :</p>
-              <div class="social-icons">
+              <div className="social-icons">
                 <a href="https://github.com/sandeep03edu" target="blank">
-                  <i class="fab fa-github"></i>
+                  <i className="fab fa-github"></i>
                 </a>
                 <a href="https://twitter.com/sandeep03edu" target="blank">
-                  <i class="fab fa-twitter"></i>
+                  <i className="fab fa-twitter"></i>
                 </a>
                 <a
                   href="https://www.instagram.com/sandeep03edu/"
                   target="blank"
                 >
-                  <i class="fab fa-instagram"></i>
+                  <i className="fab fa-instagram"></i>
                 </a>
                 <a
                   href="https://www.linkedin.com/in/sandeep03edu/"
                   target="blank"
                 >
-                  <i class="fab fa-linkedin-in"></i>
+                  <i className="fab fa-linkedin-in"></i>
                 </a>
                 <a
                   href="https://discord.com/invite/sandeep03edu"
                   target="blank"
                 >
-                  <i class="fab fa-discord"></i>
+                  <i className="fab fa-discord"></i>
                 </a>
               </div>
             </div>
           </div>
 
-          <div class="contact-form col-md-6">
-            <span class="circle one"></span>
-            <span class="circle two"></span>
+          <div className="contact-form col-md-6">
+            <span className="circle one"></span>
+            <span className="circle two"></span>
 
             <form
               autoComplete="off"
@@ -93,12 +93,12 @@ const Contact = () => {
                 sendEmail(e);
               }}
             >
-              <h3 class="title">Contact us</h3>
-              <div class="input-container">
+              <h3 className="title">Contact us</h3>
+              <div className="input-container">
                 <input
                   type="text"
                   name="name"
-                  class="input"
+                  className="input"
                   placeholder="Name"
                   required
                   value={name}
@@ -107,11 +107,11 @@ const Contact = () => {
                   }}
                 />
               </div>
-              <div class="input-container">
+              <div className="input-container">
                 <input
                   type="email"
                   name="email"
-                  class="input"
+                  className="input"
                   placeholder="Email"
                   required
                   value={emailId}
@@ -121,11 +121,11 @@ const Contact = () => {
                 />
               </div>
 
-              <div class="input-container textarea">
+              <div className="input-container textarea">
                 <textarea
                   name="message"
                   id="contactText"
-                  class="input"
+                  className="input"
                   placeholder="Message"
                   required
                   value={message}
@@ -135,7 +135,7 @@ const Contact = () => {
                 ></textarea>
               </div>
               <button
-                class="contact-button"
+                className="contact-button"
                 role="button"
                 onclick="sendMail(); return false"
               >
