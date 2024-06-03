@@ -1,0 +1,63 @@
+{
+  "sponsorLevels": [
+    {
+      "title": "Silver",
+      "perks": [
+        "Company/organization logo will be placed on website, online and offline activities like invited talks and workshop."
+      ],
+      "price": "5,000/-"
+    },
+    {
+      "title": "Platinum",
+      "perks": [
+        "Company/organization logo will be placed on website, online and offline activities like invited talks and workshop.",
+        "Offer 5 min. presentation on company/organization services.",
+        "Promote company profile on various platforms.",
+        "Company/organization logo will be placed on website and online and offline activities like invited talks and workshop."
+      ],
+      "price": "10,000/-"
+    },
+    {
+      "title": "Silver",
+      "perks": [
+        "Company/organization logo will be placed on website, online and offline activities like invited talks and workshop.",
+        "Offer 5 min. presentation on company/organization services.",
+        "Promote company profile on various platforms.",
+        "Company/organization logo will be placed on website and online and offline activities like invited talks and workshop."
+      ],
+      "price": "25,000/-"
+    }
+  ],
+  "ourSponsors": [
+    {
+      "name": "Hind High Vacuum Company Private Limited",
+      "image": "sponsor1.jpg",
+      "link": "https://hhv.in/contact-us"
+    },
+    {
+      "name": "Cadre Design",
+      "image": "sponsor2.jpg",
+      "link": "https://cadredesign.co.in/contact-us/"
+    },
+    {
+      "name": "Hind High Vacuum Company Private Limited",
+      "image": "sponsor1.jpg",
+      "link": "https://hhv.in/contact-us"
+    },
+    {
+      "name": "Cadre Design",
+      "image": "sponsor2.jpg",
+      "link": "https://cadredesign.co.in/contact-us/"
+    },
+    {
+      "name": "Hind High Vacuum Company Private Limited",
+      "image": "sponsor1.jpg",
+      "link": "https://hhv.in/contact-us"
+    },
+    {
+      "name": "Cadre Design",
+      "image": "sponsor2.jpg",
+      "link": "https://cadredesign.co.in/contact-us/"
+    }
+  ]
+}

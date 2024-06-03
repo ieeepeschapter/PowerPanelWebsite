@@ -17,7 +17,7 @@ const Contact = () => {
       return;
     }
     window.open(
-      `mailto:test@iitp.ac.in?subject=Query%20from%20${emailId}&body=${name}%20has%20sent%20below%20message:%0A%0A${message}`
+      `mailto:ieeepeschapter@iitp.ac.in?subject=Query%20from%20${emailId}&body=${name}%20has%20sent%20below%20message:%0A%0A${message}`
     );
   };
 
@@ -48,7 +48,7 @@ const Contact = () => {
                 <p>Indian Institute of Technology, Patna</p>
               </div>
               <div className="information">
-                <p>test@iitp.ac.in</p>
+                <p>ieeepeschapter@iitp.ac.in</p>
               </div>
             </div>
 
