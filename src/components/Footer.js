@@ -29,7 +29,8 @@ const Footer = () => {
       <div className="container row m-0 pt-5 pb-3">
         <div className="col-md-4" style={{ height: "auto" }}>
           <div className="mx-3">
-            <img src="https://ieeentc.github.io/Home/3b99491f4acc60738aab2c475f041902.jpg"></img>
+            <img src="./assets/logo2.jpg" />
+
             <div
               className="my-3"
               style={{ display: "flex", justifyContent: "space-around" }}
@@ -90,7 +91,9 @@ const Footer = () => {
               textDecoration: "none",
             }}
           >
-            <h3 className="mt-3" style={footerTextFamilyStyle}>Quick Links</h3>
+            <h3 className="mt-3" style={footerTextFamilyStyle}>
+              Quick Links
+            </h3>
             <div className="span-quick-links mb-4"></div>
             <Link to="/" style={{ width: "fit-content" }}>
               <FooterQuickLinkItem label={"Home"} />
@@ -121,8 +124,8 @@ const Footer = () => {
       />
 
       <p className="pb-2 mx-4" style={{ color: "#bbbbbb" }}>
-        Copyright © 2024 IEEE Nanotechnology Council Student Chapter : IIT Patna,
-        All Rights Reserved
+        Copyright © 2024 IEEE Nanotechnology Council Student Chapter : IIT
+        Patna, All Rights Reserved
       </p>
     </div>
   );

@@ -30,21 +30,21 @@ const HomeSlider = () => {
         <div className="carousel-inner">
           <div className="carousel-item active">
             <img
-              src="https://ieeentc.github.io/Home/3fdd1357c861ecff72290ab5f02a0ad6.jpg"
+              src="./assets/slider.jpg"
               className="d-block w-100"
               alt="..."
             ></img>
           </div>
           <div className="carousel-item">
             <img
-              src="https://ieeentc.github.io/Home/3fdd1357c861ecff72290ab5f02a0ad6.jpg"
+              src="./assets/slider.jpg"
               className="d-block w-100"
               alt="..."
             ></img>
           </div>
           <div className="carousel-item">
             <img
-              src="https://ieeentc.github.io/Home/3fdd1357c861ecff72290ab5f02a0ad6.jpg"
+              src="./assets/slider.jpg"
               className="d-block w-100"
               alt="..."
             ></img>
