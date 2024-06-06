@@ -239,10 +239,61 @@ const JsonDropdown = ({ onSelect }) => {
 
       <div className=" my-2 py-2 px-2" style={{ background: "yellow" }}>
         <h4>
-          <a href={`https://github.com/ieeepeschapter/PowerPanelWebsite/tree/main/public/assets/${selectedJsonFile}`} style={{cursor:"pointer"}}>
-            {`To add or update the image, first upload the image to public/assets/${selectedJsonFile} folder with a unique name`}
+          <a
+            href={`https://github.com/ieeepeschapter/PowerPanelWebsite/tree/main/public/assets/${selectedJsonFile}`}
+            target="blank"
+            style={{ cursor: "pointer" }}
+          >
+            {`To add or update an image, first upload the image to public/assets/${selectedJsonFile} folder with a unique name`}
           </a>
         </h4>
+
+        <h4>Steps to modify the data</h4>
+        <ul>
+          <li>Login to the ieeepeschapter github repository</li>
+          <li>
+            To add or update an image, upload the image file with a unique file
+            name to above designated folder.
+          </li>
+          <li>Change the data below and all fields are compulsory*</li>
+          <li>
+            Copy the update data by clicking on below Copy JSON Data button
+          </li>
+          <li>
+            <a
+              href={`https://github.com/ieeepeschapter/PowerPanelWebsite/tree/main/src/data/raw/${selectedJsonFile}.json`}
+              target="blank"
+              style={{ cursor: "pointer" }}
+            >
+              {`Open the src/data/raw/${selectedJsonFile}.json file`}
+            </a>
+          </li>
+          <li>Click on the pencil icon <a
+            sx="[object Object]"
+            data-component="IconButton"
+            type="button"
+            class="types__StyledButton-sc-ws60qy-0 bDhqXD"
+            data-hotkey="e,Shift+E"
+          >
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              role="img"
+              class="octicon octicon-pencil"
+              viewBox="0 0 16 16"
+              width="16"
+              height="16"
+              fill="currentColor"
+            >
+              <path d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25c.081-.286.235-.547.445-.758l8.61-8.61Zm.176 4.823L9.75 4.81l-6.286 6.287a.253.253 0 0 0-.064.108l-.558 1.953 1.953-.558a.253.253 0 0 0 .108-.064Zm1.238-3.763a.25.25 0 0 0-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 0 0 0-.354Z"></path>
+            </svg>
+          </a> on the rightmost side </li>
+
+          <li>Delete the current data and Paste the complete new data</li>
+          <li>Click on "Commit changes..." button, then add some description (Optional)"</li>
+          <li>Choose "Commit directly to main branch" and click "Commit changes"</li>
+          <li>Wait for 5-10 min for changes to reflect in deployed website</li>
+        </ul>
       </div>
     </div>
   );
