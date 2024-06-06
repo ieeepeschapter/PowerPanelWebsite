@@ -9,8 +9,7 @@ import { Routes, Route } from "react-router-dom";
 import Footer from "./components/Footer";
 import { useEffect, useState } from "react";
 import Loader from "./components/Utils/Loader";
-
-
+import Admin from "./components/Admin";
 
 function App() {
   const textFamilyStyle = {
@@ -22,7 +21,7 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setLoaderLoading(false);
-    }, 2000);
+    }, 20);
   }, []);
 
   return (
@@ -38,6 +37,7 @@ function App() {
             <Route path="/sponsors" element={<Sponsors />} />
             <Route path="/events" element={<Events />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/admin" element={<Admin />} />
           </Routes>
           <Footer />
         </>
