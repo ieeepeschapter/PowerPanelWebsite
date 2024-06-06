@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "./Contact.css";
 import TwoLabelHeader from "./Utils/TwoLabelHeader";
+import SocialMedia from "./Utils/SocialMedia";
+import homeData from "../data/raw/home.json";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -17,7 +19,7 @@ const Contact = () => {
       return;
     }
     window.open(
-      `mailto:ieeepeschapter@iitp.ac.in?subject=Query%20from%20${emailId}&body=${name}%20has%20sent%20below%20message:%0A%0A${message}`
+      `mailto:${homeData.chapterDetails.contactEmail}?subject=Query%20from%20${emailId}&body=${name}%20has%20sent%20below%20message:%0A%0A${message}`
     );
   };
 
@@ -48,40 +50,16 @@ const Contact = () => {
                 <p>Indian Institute of Technology, Patna</p>
               </div>
               <div className="information">
-                <a href="mailto:ieeepeschapter@iitp.ac.in">
-                  ieeepeschapter@iitp.ac.in
+                <a href={`mailto:${homeData.chapterDetails.contactEmail}`}>
+                  {homeData.chapterDetails.contactEmail}
                 </a>
               </div>
             </div>
 
             <div className="social-media">
               <p>Connect with us :</p>
-              <div className="social-icons">
-                <a href="https://github.com/sandeep03edu" target="blank">
-                  <i className="fab fa-github"></i>
-                </a>
-                <a href="https://twitter.com/sandeep03edu" target="blank">
-                  <i className="fab fa-twitter"></i>
-                </a>
-                <a
-                  href="https://www.instagram.com/sandeep03edu/"
-                  target="blank"
-                >
-                  <i className="fab fa-instagram"></i>
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/sandeep03edu/"
-                  target="blank"
-                >
-                  <i className="fab fa-linkedin-in"></i>
-                </a>
-                <a
-                  href="https://discord.com/invite/sandeep03edu"
-                  target="blank"
-                >
-                  <i className="fab fa-discord"></i>
-                </a>
-              </div>
+
+              <SocialMedia socialMedias={homeData.socialMedia} />
             </div>
           </div>
 

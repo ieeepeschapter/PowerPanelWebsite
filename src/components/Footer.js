@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import FooterQuickLinkItem from "./Utils/FooterQuickLinkItem";
+import homeData from "../data/raw/home.json";
+import SocialMedia from "./Utils/SocialMedia";
 
 const Footer = () => {
   const footerTextFamilyStyle = {
@@ -29,38 +31,13 @@ const Footer = () => {
       <div className="container row m-0 pt-5 pb-3">
         <div className="col-md-4" style={{ height: "auto" }}>
           <div className="mx-3">
-            <img src="./assets/logo2.jpg" />
+            <img src={`./assets/${homeData.chapterDetails.logo}`} />
 
             <div
               className="my-3"
               style={{ display: "flex", justifyContent: "space-around" }}
             >
-              <div className="social-icons">
-                <a href="https://github.com/sandeep03edu" target="blank">
-                  <i className="fab fa-github"></i>
-                </a>
-                <a href="https://twitter.com/sandeep03edu" target="blank">
-                  <i className="fab fa-twitter"></i>
-                </a>
-                <a
-                  href="https://www.instagram.com/sandeep03edu/"
-                  target="blank"
-                >
-                  <i className="fab fa-instagram"></i>
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/sandeep03edu/"
-                  target="blank"
-                >
-                  <i className="fab fa-linkedin-in"></i>
-                </a>
-                <a
-                  href="https://discord.com/invite/sandeep03edu"
-                  target="blank"
-                >
-                  <i className="fab fa-discord"></i>
-                </a>
-              </div>
+              <SocialMedia socialMedias={homeData.socialMedia} />
             </div>
           </div>
         </div>
@@ -68,17 +45,12 @@ const Footer = () => {
         <div className="col-md-6">
           <div className="mx-3">
             <h3 className="mt-3" style={footerTextFamilyStyle}>
-              IEEE Nanotechnology Council Student Chapter
+              {homeData.chapterDetails.chapterName}
             </h3>
             <div className="span-quick-links mb-4"></div>
 
             <p style={footerDetailsTextStyle}>
-              Ieee is the world's largest technical professional organization
-              Dedicated to advancing technology for the benefit of humanity. Iee
-              Aims to serve professionals involved in all aspects of the
-              Electrical, electronics and computing fields and related areas of
-              Science and technology with the necessary resources for the
-              Progression of modern civilization.
+              {homeData.chapterDetails.abouUsSmall}
             </p>
           </div>
         </div>
@@ -124,8 +96,8 @@ const Footer = () => {
       />
 
       <p className="pb-2 mx-4" style={{ color: "#bbbbbb" }}>
-        Copyright © 2024 IEEE Nanotechnology Council Student Chapter : IIT
-        Patna, All Rights Reserved
+        Copyright © 2024 {homeData.chapterDetails.chapterName} : IIT Patna, All
+        Rights Reserved
       </p>
     </div>
   );

@@ -1,6 +1,7 @@
 import React from "react";
 import "../index.css";
 import { Link } from "react-router-dom";
+import homeData from "../data/raw/home.json"
 
 const Navbar = () => {
   return (
@@ -26,7 +27,7 @@ const Navbar = () => {
           }}
         >
           <img
-            src="./assets/logo1.jpg"
+            src={`./assets/${homeData.chapterDetails.smallLogo}`}
             alt="Logo"
             width="auto"
             height="40"
@@ -36,7 +37,7 @@ const Navbar = () => {
             className="mx-2"
             style={{ height: "100%", display: "flex", alignItems: "center" }}
           >
-            IEEE NTC
+            {homeData.chapterDetails.chapterShortName}
           </p>
         </div>
         <button

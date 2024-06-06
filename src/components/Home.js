@@ -4,14 +4,16 @@ import HomeIntro from "./HomePage/HomeIntro";
 import HomeAbout from "./HomePage/HomeAbout";
 import HomeUpcomingEvents from "./HomePage/HomeUpcomingEvents";
 
+import homeData from "../data/raw/home.json"
+
 const Home = () => {
   return (
     <div>
-      <HomeSlider />
+      <HomeSlider sliders={homeData.homeSlider} />
 
-      <HomeIntro />
+      <HomeIntro chapterDetails = {homeData.chapterDetails} />
 
-      <HomeAbout />
+      <HomeAbout chapterDetails = {homeData.chapterDetails} />
 
       <HomeUpcomingEvents />
     </div>

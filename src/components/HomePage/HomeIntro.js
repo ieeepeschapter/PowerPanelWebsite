@@ -1,6 +1,6 @@
 import React from "react";
 
-const HomeIntro = () => {
+const HomeIntro = ({chapterDetails}) => {
   return (
     <div
       className="card container my-4"
@@ -10,7 +10,7 @@ const HomeIntro = () => {
     >
       <div className="row px-2 py-4">
         <div className="col-md-4">
-          <img src="./assets/logo2.jpg" />
+          <img src={`./assets/${chapterDetails.logo}`} />
         </div>
 
         <div
@@ -22,7 +22,7 @@ const HomeIntro = () => {
             alignItems: "center",
           }}
         >
-          <h3>IEEE Nanotechnology Council Student Chapter</h3>
+          <h3>{chapterDetails.chapterName}</h3>
           <h4>Indian Institute of Technology Patna</h4>
         </div>
       </div>

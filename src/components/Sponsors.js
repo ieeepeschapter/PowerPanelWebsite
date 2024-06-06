@@ -35,8 +35,8 @@ const Sponsors = () => {
       <h5 className="d-flex justify-content-center">
         Contact: &nbsp;
         <span>
-          <a href="mailto:ieeepeschapter@iitp.ac.in">
-            ieeepeschapter@iitp.ac.in
+          <a href={`mailto:${sponsorsDetails.sponsorEmail}`}>
+            {sponsorsDetails.sponsorEmail}
           </a>
         </span>
       </h5>
