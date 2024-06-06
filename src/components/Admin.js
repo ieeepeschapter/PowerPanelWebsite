@@ -199,9 +199,9 @@ const JsonRenderer = ({ jsonData, setJsonData }) => {
 // Array of JSON data sets
 const jsonOptions = [
   { label: "home", value: homeData },
-  { label: "event", value: eventData },
+  { label: "events", value: eventData },
   { label: "members", value: memberData },
-  { label: "sponsor", value: sponsorData },
+  { label: "sponsors", value: sponsorData },
 ];
 
 // Dropdown component
@@ -236,6 +236,14 @@ const JsonDropdown = ({ onSelect }) => {
           </option>
         ))}
       </select>
+
+      <div className=" my-2 py-2 px-2" style={{ background: "yellow" }}>
+        <h4>
+          <a href={`https://github.com/ieeepeschapter/PowerPanelWebsite/tree/main/public/assets/${selectedJsonFile}`} style={{cursor:"pointer"}}>
+            {`To add or update the image, first upload the image to public/assets/${selectedJsonFile} folder with a unique name`}
+          </a>
+        </h4>
+      </div>
     </div>
   );
 };
@@ -315,7 +323,7 @@ const Admin = () => {
 
   const handleCopyJson = () => {
     navigator.clipboard.writeText(JSON.stringify(jsonData, null, 2));
-    alert('JSON data copied to clipboard!');
+    alert("JSON data copied to clipboard!");
   };
 
   return (
@@ -323,8 +331,9 @@ const Admin = () => {
       <h1>Modify App content</h1>
       <JsonDropdown onSelect={handleJsonSelect} />
       <JsonRenderer jsonData={jsonData} setJsonData={setJsonData} />
-      <button className="btn btn-primary my-3" onClick={handleCopyJson}>Copy JSON Data</button>
-
+      <button className="btn btn-primary my-3" onClick={handleCopyJson}>
+        Copy JSON Data
+      </button>
     </div>
   );
 };
