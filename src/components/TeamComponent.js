@@ -139,7 +139,7 @@ const TeamComponent = ({ member }) => {
           }
         >
           <img
-            src={`/assets/${member.image}`}
+            src={`/assets/members/${member.image}`}
             style={
               isHoveredCoreTeam ? personImageHoveredStyle : personImageStyle
             }

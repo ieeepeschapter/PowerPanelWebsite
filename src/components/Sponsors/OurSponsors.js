@@ -13,7 +13,7 @@ const OurSponsors = ({ ourSponsors }) => {
             <>
               <a className="" key={sponsor} href={sponsor.link} target="blank">
                 <img
-                  src={`/assets/${sponsor.image}`}
+                  src={`/assets/sponsors/${sponsor.image}`}
                   alt={sponsor.name}
                   className="m-2"
                   style={{ height: "60px", width: "auto" }}

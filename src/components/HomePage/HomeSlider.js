@@ -29,7 +29,7 @@ const HomeSlider = ({ sliders }) => {
               className={idx === 0 ? "carousel-item active" : "carousel-item"}
             >
               <img
-                src={`./assets/${slider.image}`}
+                src={`./assets/home/${slider.image}`}
                 className="d-block w-100"
                 alt="..."
               ></img>

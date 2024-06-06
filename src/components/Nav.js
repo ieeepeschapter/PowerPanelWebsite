@@ -27,7 +27,7 @@ const Navbar = () => {
           }}
         >
           <img
-            src={`./assets/${homeData.chapterDetails.smallLogo}`}
+            src={`./assets/home/${homeData.chapterDetails.smallLogo}`}
             alt="Logo"
             width="auto"
             height="40"

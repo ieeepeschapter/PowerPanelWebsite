@@ -10,7 +10,7 @@ const HomeIntro = ({chapterDetails}) => {
     >
       <div className="row px-2 py-4">
         <div className="col-md-4">
-          <img src={`./assets/${chapterDetails.logo}`} />
+          <img src={`./assets/home/${chapterDetails.logo}`} />
         </div>
 
         <div

@@ -80,7 +80,7 @@ const Events = () => {
               }}
             >
               <img
-                src={`/assets/${event.image}`}
+                src={`/assets/events/${event.image}`}
                 alt=""
                 // className="col-md-12 p-0 m-0"
                 className="card-img-top"

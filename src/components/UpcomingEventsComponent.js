@@ -7,7 +7,7 @@ const UpcomingEventsComponent = ({event}) => {
     <div><div className="event_card my-3">
     <div className="card__header ">
       <img
-        src={`/assets/${event.image}`}
+        src={`/assets/events/${event.image}`}
         alt="card__image"
         className="card__image"
         width="600"

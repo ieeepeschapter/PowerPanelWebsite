@@ -31,7 +31,7 @@ const Footer = () => {
       <div className="container row m-0 pt-5 pb-3">
         <div className="col-md-4" style={{ height: "auto" }}>
           <div className="mx-3">
-            <img src={`./assets/${homeData.chapterDetails.logo}`} />
+            <img src={`./assets/home/${homeData.chapterDetails.logo}`} />
 
             <div
               className="my-3"
