@@ -8,8 +8,10 @@ import memberData from "../data/raw/members.json";
 // EditableField component
 const EditableField = ({ label, value, onChange }) => (
   <div className="mb-3">
-    <label className="form-label">{label}</label>
-    <input
+    <label className="form-label">
+      <h4> {label}</h4>
+    </label>
+    <textarea
       type="text"
       className="form-control"
       value={value}
@@ -48,11 +50,14 @@ const JsonRenderer = ({ jsonData, setJsonData }) => {
 
     const newItem = {};
     Object.keys(obj[lastKey][0]).forEach((key) => {
-      newItem[key] = ""; // Default empty value
+      console.log({ lastKey, obj, key, it: obj[lastKey][0] });
+      newItem[key] = Array.isArray(obj[lastKey][0][key]) ? [] : ""; // Default empty value
     });
 
     obj[lastKey].push(newItem);
     setJsonData(newData);
+
+    console.log({ path, pathArray, lastKey, obj, newItem });
   };
 
   // Handler to remove an item from an array
@@ -74,7 +79,7 @@ const JsonRenderer = ({ jsonData, setJsonData }) => {
   const renderData = (data, path = "") => {
     if (Array.isArray(data)) {
       return (
-        <div>
+        <div class="table-responsive">
           <table className="table table-bordered">
             <thead>
               <tr>
@@ -87,21 +92,89 @@ const JsonRenderer = ({ jsonData, setJsonData }) => {
             <tbody>
               {data.map((item, index) => (
                 <tr key={index}>
-                  {Object.keys(item).map((key) => (
-                    <td key={key}>
-                      <input
-                        type="text"
-                        className="form-control"
-                        value={item[key]}
-                        onChange={(e) =>
-                          handleInputChange(
-                            `${path}.${index}.${key}`,
-                            e.target.value
-                          )
-                        }
-                      />
-                    </td>
-                  ))}
+                  {Object.keys(item).map((key) =>
+                    Array.isArray(item[key]) === true ? (
+                      <div class="table-responsive">
+                        <table className="table table-bordered table-striped">
+                          <thead>
+                            <tr>
+                              <th scope="col">Data</th>
+                              <th scope="col">Action</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            {item[key].map((it, idx) => {
+                              return (
+                                <tr>
+                                  <td>
+                                    <textarea
+                                      type="text"
+                                      className="form-control"
+                                      value={it}
+                                      onChange={(e) => {
+                                        item[key][idx] = e.target.value;
+                                        let newVal = item[key];
+                                        handleInputChange(
+                                          `${path}.${index}.${key}`,
+                                          newVal
+                                        );
+                                      }}
+                                    />
+                                  </td>
+                                  <td>
+                                    <button
+                                      className="btn btn-danger"
+                                      onClick={() => {
+                                        item[key].splice(idx, 1);
+                                        handleInputChange(
+                                          `${path}.${index}.${key}`,
+                                          item[key]
+                                        );
+                                      }}
+                                    >
+                                      Remove
+                                    </button>
+                                  </td>
+                                </tr>
+                              );
+                            })}
+                            <tr>
+                              <td
+                                colSpan={Object.keys(data[0] || {}).length + 1}
+                              >
+                                <button
+                                  className="btn btn-primary"
+                                  onClick={() => {
+                                    item[key].push("");
+                                    handleInputChange(
+                                      `${path}.${index}.${key}`,
+                                      item[key]
+                                    );
+                                  }}
+                                >
+                                  Add Item
+                                </button>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    ) : (
+                      <td key={key}>
+                        <textarea
+                          type="text"
+                          className="form-control"
+                          value={item[key]}
+                          onChange={(e) =>
+                            handleInputChange(
+                              `${path}.${index}.${key}`,
+                              e.target.value
+                            )
+                          }
+                        />
+                      </td>
+                    )
+                  )}
                   <td>
                     <button
                       className="btn btn-danger"
@@ -268,30 +341,39 @@ const JsonDropdown = ({ onSelect }) => {
               {`Open the src/data/raw/${selectedJsonFile}.json file`}
             </a>
           </li>
-          <li>Click on the pencil icon <a
-            sx="[object Object]"
-            data-component="IconButton"
-            type="button"
-            class="types__StyledButton-sc-ws60qy-0 bDhqXD"
-            data-hotkey="e,Shift+E"
-          >
-            <svg
-              aria-hidden="true"
-              focusable="false"
-              role="img"
-              class="octicon octicon-pencil"
-              viewBox="0 0 16 16"
-              width="16"
-              height="16"
-              fill="currentColor"
+          <li>
+            Click on the pencil icon{" "}
+            <a
+              sx="[object Object]"
+              data-component="IconButton"
+              type="button"
+              class="types__StyledButton-sc-ws60qy-0 bDhqXD"
+              data-hotkey="e,Shift+E"
             >
-              <path d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25c.081-.286.235-.547.445-.758l8.61-8.61Zm.176 4.823L9.75 4.81l-6.286 6.287a.253.253 0 0 0-.064.108l-.558 1.953 1.953-.558a.253.253 0 0 0 .108-.064Zm1.238-3.763a.25.25 0 0 0-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 0 0 0-.354Z"></path>
-            </svg>
-          </a> on the rightmost side </li>
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                role="img"
+                class="octicon octicon-pencil"
+                viewBox="0 0 16 16"
+                width="16"
+                height="16"
+                fill="currentColor"
+              >
+                <path d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25c.081-.286.235-.547.445-.758l8.61-8.61Zm.176 4.823L9.75 4.81l-6.286 6.287a.253.253 0 0 0-.064.108l-.558 1.953 1.953-.558a.253.253 0 0 0 .108-.064Zm1.238-3.763a.25.25 0 0 0-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 0 0 0-.354Z"></path>
+              </svg>
+            </a>{" "}
+            on the rightmost side{" "}
+          </li>
 
           <li>Delete the current data and Paste the complete new data</li>
-          <li>Click on "Commit changes..." button, then add some description (Optional)"</li>
-          <li>Choose "Commit directly to main branch" and click "Commit changes"</li>
+          <li>
+            Click on "Commit changes..." button, then add some description
+            (Optional)"
+          </li>
+          <li>
+            Choose "Commit directly to main branch" and click "Commit changes"
+          </li>
           <li>Wait for 5-10 min for changes to reflect in deployed website</li>
         </ul>
       </div>
@@ -299,74 +381,8 @@ const JsonDropdown = ({ onSelect }) => {
   );
 };
 
-// Example data
-const data = {
-  sponsorLevels: [
-    {
-      title: "Silver",
-      perks: [
-        "Company/organization logo will be placed on website, online and offline activities like invited talks and workshop.",
-      ],
-      price: "5,000/-",
-    },
-    {
-      title: "Platinum",
-      perks: [
-        "Company/organization logo will be placed on website, online and offline activities like invited talks and workshop.",
-        "Offer 5 min. presentation on company/organization services.",
-        "Promote company profile on various platforms.",
-        "Company/organization logo will be placed on website and online and offline activities like invited talks and workshop.",
-      ],
-      price: "10,000/-",
-    },
-    {
-      title: "Silver",
-      perks: [
-        "Company/organization logo will be placed on website, online and offline activities like invited talks and workshop.",
-        "Offer 5 min. presentation on company/organization services.",
-        "Promote company profile on various platforms.",
-        "Company/organization logo will be placed on website and online and offline activities like invited talks and workshop.",
-      ],
-      price: "25,000/-",
-    },
-  ],
-  ourSponsors: [
-    {
-      name: "Hind High Vacuum Company Private Limited",
-      image: "sponsor1.jpg",
-      link: "https://hhv.in/contact-us",
-    },
-    {
-      name: "Cadre Design",
-      image: "sponsor2.jpg",
-      link: "https://cadredesign.co.in/contact-us/",
-    },
-    {
-      name: "Hind High Vacuum Company Private Limited",
-      image: "sponsor1.jpg",
-      link: "https://hhv.in/contact-us",
-    },
-    {
-      name: "Cadre Design",
-      image: "sponsor2.jpg",
-      link: "https://cadredesign.co.in/contact-us/",
-    },
-    {
-      name: "Hind High Vacuum Company Private Limited",
-      image: "sponsor1.jpg",
-      link: "https://hhv.in/contact-us",
-    },
-    {
-      name: "Cadre Design",
-      image: "sponsor2.jpg",
-      link: "https://cadredesign.co.in/contact-us/",
-    },
-  ],
-  sponsorEmail: "ieeepeschapter@iitp.ac.in",
-};
-
 const Admin = () => {
-  const [jsonData, setJsonData] = useState(data);
+  const [jsonData, setJsonData] = useState(homeData);
 
   const handleJsonSelect = (jsonFile) => {
     setJsonData(jsonFile);
