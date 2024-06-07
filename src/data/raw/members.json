@@ -30,50 +30,6 @@
       "name": "Rohit Ray",
       "title": "Vice Chair",
       "linkedin": "https://www.linkedin.com/in/rohit-ray-889b2a115/",
-      "image": "rohit.jpeg"
-    },
-    {
-      "name": "Jajna Prasad Sahoo",
-      "title": "Webmaster",
-      "linkedin": "https://www.linkedin.com/in/jajna-prasad-sahoo-9a6b5858/",
-      "image": "jajna.jpeg"
-    },
-    {
-      "name": "Sandeep Mishra",
-      "title": "Web Developer",
-      "linkedin": "https://in.linkedin.com/in/sandeep03edu",
-      "image": "member.jpg"{
-  "teamLeader": [
-    {
-      "name": "Dr. Sanjoy Kumar Parida",
-      "title": "Advisor",
-      "linkedin": "https://in.linkedin.com/in/dr-sanjoy-k-parida-77759821",
-      "image": "teamLeader.jpg"
-    }
-  ],
-  "coreTeam": [
-    {
-      "name": "Kumar Abhinav",
-      "title": "Chair",
-      "linkedin": "https://www.linkedin.com/in/kumar-abhinav-7a8986b6/",
-      "image": "abhinav.jpeg"
-    },
-    {
-      "name": "Priyesh Saini",
-      "title": "Secretary ",
-      "linkedin": "https://www.linkedin.com/in/priyesh-saini-bb69238a/",
-      "image": "priyesh.jpg"
-    },
-    {
-      "name": "Piyush Rai",
-      "title": "Treasurer",
-      "linkedin": "https://in.linkedin.com/in/sandeep03edu",
-      "image": "member.jpg"
-    },
-    {
-      "name": "Rohit Ray",
-      "title": "Vice Chair",
-      "linkedin": "https://www.linkedin.com/in/rohit-ray-889b2a115/",
       "image": "rohit1.jpeg"
     },
     {
@@ -87,9 +43,6 @@
       "title": "Web Developer",
       "linkedin": "https://in.linkedin.com/in/sandeep03edu",
       "image": "member.jpg"
-    }
-  ]
-}
     }
   ]
 }
