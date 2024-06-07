@@ -6,7 +6,6 @@
       "linkedin": "https://in.linkedin.com/in/dr-sanjoy-k-parida-77759821",
       "image": "teamLeader.jpg"
     }
-    
   ],
   "coreTeam": [
     {
@@ -14,13 +13,6 @@
       "title": "Web Developer",
       "linkedin": "https://in.linkedin.com/in/sandeep03edu",
       "image": "member.jpg"
-    }
-    ,
-    {
-      "name": "Sandeep Mishra",
-      "title": "Web Developer",
-      "linkedin": "https://in.linkedin.com/in/sandeep03edu",
-      "image": "member.jpg"
     },
     {
       "name": "Sandeep Mishra",
@@ -39,6 +31,12 @@
       "title": "Web Developer",
       "linkedin": "https://in.linkedin.com/in/sandeep03edu",
       "image": "member.jpg"
+    },
+    {
+      "name": "Jajna Prasad Sahoo",
+      "title": "Webmaster",
+      "linkedin": "https://www.linkedin.com/in/jajna-prasad-sahoo-9a6b5858/",
+      "image": "jajna.jpeg"
     },
     {
       "name": "Sandeep Mishra",
