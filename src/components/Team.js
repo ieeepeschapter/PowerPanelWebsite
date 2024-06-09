@@ -5,18 +5,12 @@ import TwoLabelHeader from "./Utils/TwoLabelHeader";
 import members from "../data/raw/members.json";
 
 const Team = () => {
-  const [teamLeaders, setTeamLeaders] = useState([]);
-  const [coreTeam, setCoreTeam] = useState([]);
 
   const headerStyle = {
     fontWeight: 500,
   };
 
-  useEffect(() => {
-    setTeamLeaders(members.teamLeader);
-    setCoreTeam(members.coreTeam);
-    return () => {};
-  }, []);
+
 
   return (
     <div>
@@ -36,12 +30,13 @@ const Team = () => {
           className="row"
           style={{ display: "flex", justifyContent: "center", width: "100%" }}
         >
-          {teamLeaders.map((member) => (
+          {members.teamLeader.map((member) => (
             <div key={member} className="col-sm-6 col-lg-4 col-xl-3">
               <TeamComponent member={member} />
             </div>
           ))}
         </div>
+
         <h2 className="mt-5 mb-0" style={headerStyle}>
           <TwoLabelHeader first={"Core"} second={"Team"} />
         </h2>
@@ -50,7 +45,22 @@ const Team = () => {
           className="row"
           style={{ display: "flex", justifyContent: "center", width: "100%" }}
         >
-          {coreTeam.map((member) => (
+          {members.coreTeam.map((member) => (
+            <div key={member} className="col-sm-6 col-lg-4 col-xl-3">
+              <TeamComponent member={member} />
+            </div>
+          ))}
+        </div>
+
+        <h2 className="mt-5 mb-0" style={headerStyle}>
+          <TwoLabelHeader first={"Student"} second={"Member"} />
+        </h2>
+
+        <div
+          className="row"
+          style={{ display: "flex", justifyContent: "center", width: "100%" }}
+        >
+          {members.studentMember.map((member) => (
             <div key={member} className="col-sm-6 col-lg-4 col-xl-3">
               <TeamComponent member={member} />
             </div>
