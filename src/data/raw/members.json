@@ -1,51 +1,44 @@
 {
   "teamLeader": [
     {
-      "name": "Dr Sanjay Kumar Parida",
-      "title": "Convenor",
+      "name": "Dr. Sanjoy Kumar Parida",
+      "title": "Advisor",
       "linkedin": "https://in.linkedin.com/in/dr-sanjoy-k-parida-77759821",
       "image": "teamLeader.jpg"
     }
-    
   ],
   "coreTeam": [
-    {
+     {
       "name": "Kumar Abhinav",
       "title": "Chair",
       "linkedin": "https://in.linkedin.com/in/sandeep03edu",
       "image": "abhinav.jpeg"
     },
+     {
+      "name": "Priyesh Saini",
+      "title": "Secretary ",
+      "linkedin": "https://www.linkedin.com/in/priyesh-saini-bb69238a/",
+      "image": "priyesh.jpg"
+    },
     {
-      "name": "Kumar Abhinav",
-      "title": "Chair",
+      "name": "Piyush Rai",
+      "title": "Treasurer",
       "linkedin": "https://in.linkedin.com/in/sandeep03edu",
-      "image": "abhinav.jpeg"
-    },{
-      "name": "Kumar Abhinav",
-      "title": "Chair",
-      "linkedin": "https://in.linkedin.com/in/sandeep03edu",
-      "image": "abhinav.jpeg"
-    },{
-      "name": "Kumar Abhinav",
-      "title": "Chair",
-      "linkedin": "https://in.linkedin.com/in/sandeep03edu",
-      "image": "abhinav.jpeg"
-    },{
-      "name": "Kumar Abhinav",
-      "title": "Chair",
-      "linkedin": "https://in.linkedin.com/in/sandeep03edu",
-      "image": "abhinav.jpeg"
-    },{
-      "name": "Kumar Abhinav",
-      "title": "Chair",
-      "linkedin": "https://in.linkedin.com/in/sandeep03edu",
-      "image": "abhinav.jpeg"
-    },{
-      "name": "Kumar Abhinav",
-      "title": "Chair",
-      "linkedin": "https://in.linkedin.com/in/sandeep03edu",
-      "image": "abhinav.jpeg"
-    }
+      "image": "piyush1.jpg"
+    },
+    {
+      "name": "Rohit Ray",
+      "title": "Vice Chair",
+      "linkedin": "https://www.linkedin.com/in/rohit-ray-889b2a115/",
+      "image": "rohit1.jpeg"
+    },
+    {
+      "name": "Jajna Prasad Sahoo",
+      "title": "Webmaster",
+      "linkedin": "https://www.linkedin.com/in/jajna-prasad-sahoo-9a6b5858/",
+      "image": "jajna.jpeg"
+    },
+  
   ],
   "studentMember": [
     {
