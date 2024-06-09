@@ -8,13 +8,13 @@
     }
   ],
   "coreTeam": [
-    {
+     {
       "name": "Kumar Abhinav",
       "title": "Chair",
-      "linkedin": "https://www.linkedin.com/in/kumar-abhinav-7a8986b6/",
+      "linkedin": "https://in.linkedin.com/in/sandeep03edu",
       "image": "abhinav.jpeg"
     },
-    {
+     {
       "name": "Priyesh Saini",
       "title": "Secretary ",
       "linkedin": "https://www.linkedin.com/in/priyesh-saini-bb69238a/",
@@ -37,6 +37,58 @@
       "title": "Webmaster",
       "linkedin": "https://www.linkedin.com/in/jajna-prasad-sahoo-9a6b5858/",
       "image": "jajna.jpeg"
+    },
+  
+  ],
+  "studentMember": [
+    {
+      "name": "Sandeep Mishra",
+      "title": "Web Developer",
+      "linkedin": "https://in.linkedin.com/in/sandeep03edu",
+      "image": "member.jpg"
+    }
+    ,
+    {
+      "name": "Sandeep Mishra",
+      "title": "Web Developer",
+      "linkedin": "https://in.linkedin.com/in/sandeep03edu",
+      "image": "member.jpg"
+    },
+    {
+      "name": "Sandeep Mishra",
+      "title": "Web Developer",
+      "linkedin": "https://in.linkedin.com/in/sandeep03edu",
+      "image": "member.jpg"
+    },
+    {
+      "name": "Sandeep Mishra",
+      "title": "Web Developer",
+      "linkedin": "https://in.linkedin.com/in/sandeep03edu",
+      "image": "member.jpg"
+    },
+    {
+      "name": "Sandeep Mishra",
+      "title": "Web Developer",
+      "linkedin": "https://in.linkedin.com/in/sandeep03edu",
+      "image": "member.jpg"
+    },
+    {
+      "name": "Sandeep Mishra",
+      "title": "Web Developer",
+      "linkedin": "https://in.linkedin.com/in/sandeep03edu",
+      "image": "member.jpg"
+    },
+    {
+      "name": "Sandeep Mishra",
+      "title": "Web Developer",
+      "linkedin": "https://in.linkedin.com/in/sandeep03edu",
+      "image": "member.jpg"
+    },
+    {
+      "name": "Sandeep Mishra",
+      "title": "Web Developer",
+      "linkedin": "https://in.linkedin.com/in/sandeep03edu",
+      "image": "member.jpg"
     },
     {
       "name": "Sandeep Mishra",

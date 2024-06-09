@@ -24,10 +24,12 @@ const TeamComponent = ({ member }) => {
     borderRadius: "50%",
     border: "4px dashed transparent",
     transition: "padding 0.3s",
-    paddingTop: "10px",
-    paddingBottom: "10px",
+    // paddingTop: "10px",
+    // paddingBottom: "10px",
     width: "fit-content",
     height: "max-content",
+    padding:"10px"
+
   };
 
   const personImageHoveredDivStyle = {
@@ -36,11 +38,11 @@ const TeamComponent = ({ member }) => {
     borderRadius: "50%",
     border: "dashed white",
     transition: "padding 0.3s",
-    paddingTop: "10px",
-    paddingBottom: "10px",
+    // paddingTop: "10px",
+    // paddingBottom: "10px",
     width: "fit-content",
     height: "fit-content",
-    // padding:"10px"
+    padding:"10px"
   };
 
   const personImageStyle = {
@@ -49,6 +51,7 @@ const TeamComponent = ({ member }) => {
     objectFit: "cover",
     // border: "5px solid white",
     borderRadius: "50%",
+    aspectRatio: 1
   };
 
   const personImageHoveredStyle = {
@@ -57,6 +60,7 @@ const TeamComponent = ({ member }) => {
     objectFit: "cover",
     // border: "5px solid white",
     borderRadius: "50%",
+    aspectRatio: 1
   };
 
   const fullnameStyle = {
@@ -133,7 +137,7 @@ const TeamComponent = ({ member }) => {
         style={isHoveredCoreTeam ? singlePersonHoveredStyle : singlePersonStyle}
       >
         <div
-          className="row"
+          className="rowa"
           style={
             isHoveredCoreTeam ? personImageHoveredDivStyle : personImageDivStyle
           }

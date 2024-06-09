@@ -28,11 +28,10 @@ const Footer = () => {
         flexDirection: "column",
       }}
     >
-      <div className="container row m-0 pt-5 pb-3">
-        <div className="col-md-4" style={{ height: "auto" }}>
+      <div className="row my-0 mx-3 pt-5 pb-3">
+        <div className="col-md-3" style={{ height: "auto" }}>
           <div className="mx-3">
-            <img src={`./assets/home/${homeData.chapterDetails.logo}`} />
-
+            <img src={`./assets/home/${homeData.chapterDetails.footerLogo}`} />
             <div
               className="my-3"
               style={{ display: "flex", justifyContent: "space-around" }}
@@ -42,7 +41,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="col-md-6">
+        <div className="col-md-4">
           <div className="mx-3">
             <h3 className="mt-3" style={footerTextFamilyStyle}>
               {homeData.chapterDetails.chapterName}
@@ -82,6 +81,12 @@ const Footer = () => {
             <Link to="/contact" style={{ width: "fit-content" }}>
               <FooterQuickLinkItem label={"Contact"} />
             </Link>
+          </div>
+        </div>
+
+        <div className="col-md-3" style={{ height: "auto"}}>
+          <div className="mx-1">
+            <img src={`./assets/home/${homeData.chapterDetails.quickLinksLogo}`} />
           </div>
         </div>
       </div>
