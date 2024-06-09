@@ -1,7 +1,7 @@
 import React from "react";
 import "../index.css";
 import { Link } from "react-router-dom";
-import homeData from "../data/raw/home.json"
+import homeData from "../data/raw/home.json";
 
 const Navbar = () => {
   return (
@@ -27,18 +27,30 @@ const Navbar = () => {
           }}
         >
           <img
-            src={`./assets/home/${homeData.chapterDetails.smallLogo}`}
+            src={`./assets/home/${homeData.chapterDetails.navLeftLogo}`}
             alt="Logo"
             width="auto"
             height="40"
             className="d-inline-block align-text-top"
           ></img>
           <p
-            className="mx-2"
-            style={{ height: "100%", display: "flex", alignItems: "center" }}
+            className="mx-3"
+            style={{
+              height: "100%",
+              display: "flex",
+              alignItems: "center",
+              width: "min-content",
+            }}
           >
             {homeData.chapterDetails.chapterShortName}
           </p>
+          <img
+            src={`./assets/home/${homeData.chapterDetails.navRightLogo}`}
+            alt="Logo"
+            width="auto"
+            height="40"
+            className="d-inline-block align-text-top"
+          ></img>
         </div>
         <button
           className="navbar-toggler"
@@ -51,10 +63,7 @@ const Navbar = () => {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div
-          className="collapse navbar-collapse"
-          id="navbarNav"
-        >
+        <div className="collapse navbar-collapse" id="navbarNav">
           <ul
             className="navbar-nav"
             style={{ fontFamily: '"PT Serif", serif' }}
