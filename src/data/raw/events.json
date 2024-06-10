@@ -1,61 +1,268 @@
 {
   "events": [
     {
-      "title": "Optical Fiber-Based Plasmonic Sensors For Microorganism Detection",
-      "description": "Event is organized by IEEE Nanotechnology Council Student Chapter, Indian Institute of Technology, Patna on 15th July 2024, 6:00 PM (IST)",
-      "date": "15/07/2024",
-      "image": "poster.jpg",
-      "registrationLink": "https://docs.google.com/forms/d/e/1FAIpQLSeSSvFlkr9eVlZ-z4En6eM9QUvqwR5yF9AFCRF0Qac4hV6FgQ/viewform"
-    },
-    {
-      "title": "Optical Fiber-Based Plasmonic Sensors For Microorganism Detection",
-      "description": "Event is organized by IEEE Nanotechnology Council Student Chapter, Indian Institute of Technology, Patna on 22nd July 2024, 9:00 PM (IST)",
-      "date": "22/07/2024",
-      "image": "poster.jpg",
-      "registrationLink": "https://docs.google.com/forms/d/e/1FAIpQLSeSSvFlkr9eVlZ-z4En6eM9QUvqwR5yF9AFCRF0Qac4hV6FgQ/viewform"
-    },
-    {
-      "title": "Optical Fiber-Based Plasmonic Sensors For Microorganism Detection",
-      "description": "Event is organized by IEEE Nanotechnology Council Student Chapter, Indian Institute of Technology, Patna on 25th July 2024, 4:00 PM (IST)",
-      "date": "25/07/2024",
-      "image": "poster.jpg",
-      "registrationLink": "https://docs.google.com/forms/d/e/1FAIpQLSeSSvFlkr9eVlZ-z4En6eM9QUvqwR5yF9AFCRF0Qac4hV6FgQ/viewform"
-    },
-
-    {
-      "title": "Optical Fiber-Based Plasmonic Sensors For Microorganism Detection",
-      "description": "Event is organized by IEEE Nanotechnology Council Student Chapter, Indian Institute of Technology, Patna on 15th May 2024, 6:00 PM (IST)",
-      "date": "15/05/2024",
-      "image": "poster.jpg",
-      "registrationLink": "https://docs.google.com/forms/d/e/1FAIpQLSeSSvFlkr9eVlZ-z4En6eM9QUvqwR5yF9AFCRF0Qac4hV6FgQ/viewform"
-    },
-    {
-      "title": "Optical Fiber-Based Plasmonic Sensors For Microorganism Detection",
-      "description": "Event is organized by IEEE Nanotechnology Council Student Chapter, Indian Institute of Technology, Patna on 22nd May 2024, 9:00 PM (IST)",
-      "date": "22/05/2024",
-      "image": "poster.jpg",
-      "registrationLink": "https://docs.google.com/forms/d/e/1FAIpQLSeSSvFlkr9eVlZ-z4En6eM9QUvqwR5yF9AFCRF0Qac4hV6FgQ/viewform"
-    },
-    {
-      "title": "Optical Fiber-Based Plasmonic Sensors For Microorganism Detection",
-      "description": "Event is organized by IEEE Nanotechnology Council Student Chapter, Indian Institute of Technology, Patna on 25th May 2024, 4:00 PM (IST)",
-      "date": "25/05/2024",
-      "image": "poster.jpg",
-      "registrationLink": "https://docs.google.com/forms/d/e/1FAIpQLSeSSvFlkr9eVlZ-z4En6eM9QUvqwR5yF9AFCRF0Qac4hV6FgQ/viewform"
-    },
-    {
+      "id": "1",
       "title": "Optical Fiber-Based Plasmonic Sensors For Microorganism Detection",
       "description": "Event is organized by IEEE Nanotechnology Council Student Chapter, Indian Institute of Technology, Patna on 22nd April 2024, 9:00 PM (IST)",
+      "detailedTopDescription": [
+        "On Wednesday, 24th April 2024, the highly anticipated IEEE PES DAY Distinguished Lecture Program (DLP) titled “Electric Vehicle Battery Charging Using Plug-in Solutions” was delivered by Professor Emil Levi, Professor of Electric Machines and Drives at Liverpool John Moores University. The hybrid lecture, held in Engineering_A_3.053, at 13:00 BST, proved to be a highly informative and insightful event.",
+        "Professor Emil Levi, an IEEE Fellow and a PES Distinguished Lecturer, has won several awards including the Cyril Veinott award of the IEEE Power and Energy Society for 2009, the Best Paper award of the IEEE Trans. on Industrial Electronics for 2008, the European Power Electronics (EPE) Association “Outstanding Achievement Award” for 2014, and the “Professor Istvan Nagy Award” of the Power Electronics and Motion Control (PEMC) Council for 2018. Prof. Levi has served as a Co-Editor-in-Chief of the IEEE Trans. on Industrial Electronics in the 2009-2013 period and as Editor-in-Chief of the IET Electric Power Applications from 2010 until 2022. He is currently serving as Editor-in-Chief of the IEEE Trans. on Industrial Electronics (2019-2024).",
+        "The talk, organized and hosted by The University of Manchester IEEE PES SBC, piqued the interest of attendees from various backgrounds and universities. The event had 13 in-person attendees and 11 online attendees from across academia and industry."
+      ],
+      "detailedBottomDescription": [
+        "Professor Emil Levi’s presentation was a detailed overview of the latest developments and challenges regarding electric vehicle charging. Drawing from his extensive knowledge on battery charging innovations and worldwide electrification goals, he shared valuable insights and practical solutions.",
+        "Professor Levi started the Lecture by talking about the current trends in the EV industry and presented several intriguing statistics on the evolution of EV battery charging technology. Then, he gave the audience insights into the various plug-in solutions and the pros and cons of their topologies before delving into the technical details of integrated and non-integrated charging. He concluded the lecture by discussing the future of Electric Vehicles, which included polyphase charging and V2X(Vehicle-to-Everything) technologies.",
+        "Finally, there was a Q&A session, which had both online and in-person participants asking thought-provoking questions about the future of EV charging markets, the evolution of charging technology, and the details of EV battery regulations.",
+        "The University of Manchester IEEE PES SBC organizing committee expresses their sincere gratitude to Professor Emil Levi for his detailed and thought-provoking lecture. For additional information, including the biography of Professor Emil Levi and the abstract of his lectures, please visit the Manchester PES SBC website."
+      ],
+      "images": [
+        "ERLDC.jpg",
+        "con-1.jpg",
+        "poster.jpg",
+        "poster.jpg"
+      ],
+      "imagesCaption": [
+        "Figure 1. Event Flyer Levi talking about fully integrated on-board charging.Levi talking about fully integrated on-board charging Event Flyer Levi talking about fully integrated on-board charging.Levi talking about fully integrated on-board charging.",
+        "Figure 2. Elizabeth Michalenko, Chair IEEE PES SBC UoM, introducing Professor Emil Levi to the audience.",
+        "Figure 3. Professor Emil Levi talking about fully integrated on-board charging."
+      ],
       "date": "22/04/2024",
-      "image": "poster.jpg",
-      "registrationLink": "https://docs.google.com/forms/d/e/1FAIpQLSeSSvFlkr9eVlZ-z4En6eM9QUvqwR5yF9AFCRF0Qac4hV6FgQ/viewform"
+      "poster": "poster.jpg",
+      "registrationLink": "https://docs.google.com/forms/d/e/1FAIpQLSeSSvFlkr9eVlZ-z4En6eM9QUvqwR5yF9AFCRF0Qac4hV6FgQ/viewform",
+      "organizedByOrganization": "IEEE PES Chapter, IIT Patna",
+      "organizerPersons": "Kumar Abhinav, Priyesh Saini",
+      "organizersPositions": "Chair, Secretary at the IEEE PES Student Chapter"
     },
     {
+      "id": "2",
       "title": "Optical Fiber-Based Plasmonic Sensors For Microorganism Detection",
       "description": "Event is organized by IEEE Nanotechnology Council Student Chapter, Indian Institute of Technology, Patna on 25th April 2024, 4:00 PM (IST)",
+      "detailedTopDescription": [
+        "On Wednesday, 24th April 2024, the highly anticipated IEEE PES DAY Distinguished Lecture Program (DLP) titled “Electric Vehicle Battery Charging Using Plug-in Solutions” was delivered by Professor Emil Levi, Professor of Electric Machines and Drives at Liverpool John Moores University. The hybrid lecture, held in Engineering_A_3.053, at 13:00 BST, proved to be a highly informative and insightful event.",
+        "Professor Emil Levi, an IEEE Fellow and a PES Distinguished Lecturer, has won several awards including the Cyril Veinott award of the IEEE Power and Energy Society for 2009, the Best Paper award of the IEEE Trans. on Industrial Electronics for 2008, the European Power Electronics (EPE) Association “Outstanding Achievement Award” for 2014, and the “Professor Istvan Nagy Award” of the Power Electronics and Motion Control (PEMC) Council for 2018. Prof. Levi has served as a Co-Editor-in-Chief of the IEEE Trans. on Industrial Electronics in the 2009-2013 period and as Editor-in-Chief of the IET Electric Power Applications from 2010 until 2022. He is currently serving as Editor-in-Chief of the IEEE Trans. on Industrial Electronics (2019-2024).",
+        "The talk, organized and hosted by The University of Manchester IEEE PES SBC, piqued the interest of attendees from various backgrounds and universities. The event had 13 in-person attendees and 11 online attendees from across academia and industry."
+      ],
+      "detailedBottomDescription": [
+        "Professor Emil Levi’s presentation was a detailed overview of the latest developments and challenges regarding electric vehicle charging. Drawing from his extensive knowledge on battery charging innovations and worldwide electrification goals, he shared valuable insights and practical solutions.",
+        "Professor Levi started the Lecture by talking about the current trends in the EV industry and presented several intriguing statistics on the evolution of EV battery charging technology. Then, he gave the audience insights into the various plug-in solutions and the pros and cons of their topologies before delving into the technical details of integrated and non-integrated charging. He concluded the lecture by discussing the future of Electric Vehicles, which included polyphase charging and V2X(Vehicle-to-Everything) technologies.",
+        "Finally, there was a Q&A session, which had both online and in-person participants asking thought-provoking questions about the future of EV charging markets, the evolution of charging technology, and the details of EV battery regulations.",
+        "The University of Manchester IEEE PES SBC organizing committee expresses their sincere gratitude to Professor Emil Levi for his detailed and thought-provoking lecture. For additional information, including the biography of Professor Emil Levi and the abstract of his lectures, please visit the Manchester PES SBC website."
+      ],
+      "images": [
+        "ERLDC.jpg",
+        "con-1.jpg",
+        "poster.jpg",
+        "poster.jpg"
+      ],
+      "imagesCaption": [
+        "Figure 1. Event Flyer Levi talking about fully integrated on-board charging.Levi talking about fully integrated on-board charging Event Flyer Levi talking about fully integrated on-board charging.Levi talking about fully integrated on-board charging.",
+        "Figure 2. Elizabeth Michalenko, Chair IEEE PES SBC UoM, introducing Professor Emil Levi to the audience.",
+        "Figure 3. Professor Emil Levi talking about fully integrated on-board charging."
+      ],
       "date": "25/04/2024",
-      "image": "poster.jpg",
-      "registrationLink": "https://docs.google.com/forms/d/e/1FAIpQLSeSSvFlkr9eVlZ-z4En6eM9QUvqwR5yF9AFCRF0Qac4hV6FgQ/viewform"
+      "poster": "poster.jpg",
+      "registrationLink": "https://docs.google.com/forms/d/e/1FAIpQLSeSSvFlkr9eVlZ-z4En6eM9QUvqwR5yF9AFCRF0Qac4hV6FgQ/viewform",
+      "organizedByOrganization": "IEEE PES Chapter, IIT Patna",
+      "organizerPersons": "Kumar Abhinav, Priyesh Saini",
+      "organizersPositions": "Chair, Secretary at the IEEE PES Student Chapter"
+    },
+    {
+      "id": "3",
+      "title": "Optical Fiber-Based Plasmonic Sensors For Microorganism Detection",
+      "description": "Event is organized by IEEE Nanotechnology Council Student Chapter, Indian Institute of Technology, Patna on 15th May 2024, 6:00 PM (IST)",
+      "detailedTopDescription": [
+        "On Wednesday, 24th April 2024, the highly anticipated IEEE PES DAY Distinguished Lecture Program (DLP) titled “Electric Vehicle Battery Charging Using Plug-in Solutions” was delivered by Professor Emil Levi, Professor of Electric Machines and Drives at Liverpool John Moores University. The hybrid lecture, held in Engineering_A_3.053, at 13:00 BST, proved to be a highly informative and insightful event.",
+        "Professor Emil Levi, an IEEE Fellow and a PES Distinguished Lecturer, has won several awards including the Cyril Veinott award of the IEEE Power and Energy Society for 2009, the Best Paper award of the IEEE Trans. on Industrial Electronics for 2008, the European Power Electronics (EPE) Association “Outstanding Achievement Award” for 2014, and the “Professor Istvan Nagy Award” of the Power Electronics and Motion Control (PEMC) Council for 2018. Prof. Levi has served as a Co-Editor-in-Chief of the IEEE Trans. on Industrial Electronics in the 2009-2013 period and as Editor-in-Chief of the IET Electric Power Applications from 2010 until 2022. He is currently serving as Editor-in-Chief of the IEEE Trans. on Industrial Electronics (2019-2024).",
+        "The talk, organized and hosted by The University of Manchester IEEE PES SBC, piqued the interest of attendees from various backgrounds and universities. The event had 13 in-person attendees and 11 online attendees from across academia and industry."
+      ],
+      "detailedBottomDescription": [
+        "Professor Emil Levi’s presentation was a detailed overview of the latest developments and challenges regarding electric vehicle charging. Drawing from his extensive knowledge on battery charging innovations and worldwide electrification goals, he shared valuable insights and practical solutions.",
+        "Professor Levi started the Lecture by talking about the current trends in the EV industry and presented several intriguing statistics on the evolution of EV battery charging technology. Then, he gave the audience insights into the various plug-in solutions and the pros and cons of their topologies before delving into the technical details of integrated and non-integrated charging. He concluded the lecture by discussing the future of Electric Vehicles, which included polyphase charging and V2X(Vehicle-to-Everything) technologies.",
+        "Finally, there was a Q&A session, which had both online and in-person participants asking thought-provoking questions about the future of EV charging markets, the evolution of charging technology, and the details of EV battery regulations.",
+        "The University of Manchester IEEE PES SBC organizing committee expresses their sincere gratitude to Professor Emil Levi for his detailed and thought-provoking lecture. For additional information, including the biography of Professor Emil Levi and the abstract of his lectures, please visit the Manchester PES SBC website."
+      ],
+      "images": [
+        "ERLDC.jpg",
+        "con-1.jpg",
+        "poster.jpg",
+        "poster.jpg"
+      ],
+      "imagesCaption": [
+        "Figure 1. Event Flyer Levi talking about fully integrated on-board charging.Levi talking about fully integrated on-board charging Event Flyer Levi talking about fully integrated on-board charging.Levi talking about fully integrated on-board charging.",
+        "Figure 2. Elizabeth Michalenko, Chair IEEE PES SBC UoM, introducing Professor Emil Levi to the audience.",
+        "Figure 3. Professor Emil Levi talking about fully integrated on-board charging."
+      ],
+      "date": "15/05/2024",
+      "poster": "poster.jpg",
+      "registrationLink": "https://docs.google.com/forms/d/e/1FAIpQLSeSSvFlkr9eVlZ-z4En6eM9QUvqwR5yF9AFCRF0Qac4hV6FgQ/viewform",
+      "organizedByOrganization": "IEEE PES Chapter, IIT Patna",
+      "organizerPersons": "Kumar Abhinav, Priyesh Saini",
+      "organizersPositions": "Chair, Secretary at the IEEE PES Student Chapter"
+    },
+    {
+      "id": "4",
+      "title": "Optical Fiber-Based Plasmonic Sensors For Microorganism Detection",
+      "description": "Event is organized by IEEE Nanotechnology Council Student Chapter, Indian Institute of Technology, Patna on 22nd May 2024, 9:00 PM (IST)",
+      "detailedTopDescription": [
+        "On Wednesday, 24th April 2024, the highly anticipated IEEE PES DAY Distinguished Lecture Program (DLP) titled “Electric Vehicle Battery Charging Using Plug-in Solutions” was delivered by Professor Emil Levi, Professor of Electric Machines and Drives at Liverpool John Moores University. The hybrid lecture, held in Engineering_A_3.053, at 13:00 BST, proved to be a highly informative and insightful event.",
+        "Professor Emil Levi, an IEEE Fellow and a PES Distinguished Lecturer, has won several awards including the Cyril Veinott award of the IEEE Power and Energy Society for 2009, the Best Paper award of the IEEE Trans. on Industrial Electronics for 2008, the European Power Electronics (EPE) Association “Outstanding Achievement Award” for 2014, and the “Professor Istvan Nagy Award” of the Power Electronics and Motion Control (PEMC) Council for 2018. Prof. Levi has served as a Co-Editor-in-Chief of the IEEE Trans. on Industrial Electronics in the 2009-2013 period and as Editor-in-Chief of the IET Electric Power Applications from 2010 until 2022. He is currently serving as Editor-in-Chief of the IEEE Trans. on Industrial Electronics (2019-2024).",
+        "The talk, organized and hosted by The University of Manchester IEEE PES SBC, piqued the interest of attendees from various backgrounds and universities. The event had 13 in-person attendees and 11 online attendees from across academia and industry."
+      ],
+      "detailedBottomDescription": [
+        "Professor Emil Levi’s presentation was a detailed overview of the latest developments and challenges regarding electric vehicle charging. Drawing from his extensive knowledge on battery charging innovations and worldwide electrification goals, he shared valuable insights and practical solutions.",
+        "Professor Levi started the Lecture by talking about the current trends in the EV industry and presented several intriguing statistics on the evolution of EV battery charging technology. Then, he gave the audience insights into the various plug-in solutions and the pros and cons of their topologies before delving into the technical details of integrated and non-integrated charging. He concluded the lecture by discussing the future of Electric Vehicles, which included polyphase charging and V2X(Vehicle-to-Everything) technologies.",
+        "Finally, there was a Q&A session, which had both online and in-person participants asking thought-provoking questions about the future of EV charging markets, the evolution of charging technology, and the details of EV battery regulations.",
+        "The University of Manchester IEEE PES SBC organizing committee expresses their sincere gratitude to Professor Emil Levi for his detailed and thought-provoking lecture. For additional information, including the biography of Professor Emil Levi and the abstract of his lectures, please visit the Manchester PES SBC website."
+      ],
+      "images": [
+        "ERLDC.jpg",
+        "con-1.jpg",
+        "poster.jpg",
+        "poster.jpg"
+      ],
+      "imagesCaption": [
+        "Figure 1. Event Flyer Levi talking about fully integrated on-board charging.Levi talking about fully integrated on-board charging Event Flyer Levi talking about fully integrated on-board charging.Levi talking about fully integrated on-board charging.",
+        "Figure 2. Elizabeth Michalenko, Chair IEEE PES SBC UoM, introducing Professor Emil Levi to the audience.",
+        "Figure 3. Professor Emil Levi talking about fully integrated on-board charging."
+      ],
+      "date": "22/05/2024",
+      "poster": "poster.jpg",
+      "registrationLink": "https://docs.google.com/forms/d/e/1FAIpQLSeSSvFlkr9eVlZ-z4En6eM9QUvqwR5yF9AFCRF0Qac4hV6FgQ/viewform",
+      "organizedByOrganization": "IEEE PES Chapter, IIT Patna",
+      "organizerPersons": "Kumar Abhinav, Priyesh Saini",
+      "organizersPositions": "Chair, Secretary at the IEEE PES Student Chapter"
+    },
+    {
+      "id": "5",
+      "title": "Optical Fiber-Based Plasmonic Sensors For Microorganism Detection",
+      "description": "Event is organized by IEEE Nanotechnology Council Student Chapter, Indian Institute of Technology, Patna on 25th May 2024, 4:00 PM (IST)",
+      "detailedTopDescription": [
+        "On Wednesday, 24th April 2024, the highly anticipated IEEE PES DAY Distinguished Lecture Program (DLP) titled “Electric Vehicle Battery Charging Using Plug-in Solutions” was delivered by Professor Emil Levi, Professor of Electric Machines and Drives at Liverpool John Moores University. The hybrid lecture, held in Engineering_A_3.053, at 13:00 BST, proved to be a highly informative and insightful event.",
+        "Professor Emil Levi, an IEEE Fellow and a PES Distinguished Lecturer, has won several awards including the Cyril Veinott award of the IEEE Power and Energy Society for 2009, the Best Paper award of the IEEE Trans. on Industrial Electronics for 2008, the European Power Electronics (EPE) Association “Outstanding Achievement Award” for 2014, and the “Professor Istvan Nagy Award” of the Power Electronics and Motion Control (PEMC) Council for 2018. Prof. Levi has served as a Co-Editor-in-Chief of the IEEE Trans. on Industrial Electronics in the 2009-2013 period and as Editor-in-Chief of the IET Electric Power Applications from 2010 until 2022. He is currently serving as Editor-in-Chief of the IEEE Trans. on Industrial Electronics (2019-2024).",
+        "The talk, organized and hosted by The University of Manchester IEEE PES SBC, piqued the interest of attendees from various backgrounds and universities. The event had 13 in-person attendees and 11 online attendees from across academia and industry."
+      ],
+      "detailedBottomDescription": [
+        "Professor Emil Levi’s presentation was a detailed overview of the latest developments and challenges regarding electric vehicle charging. Drawing from his extensive knowledge on battery charging innovations and worldwide electrification goals, he shared valuable insights and practical solutions.",
+        "Professor Levi started the Lecture by talking about the current trends in the EV industry and presented several intriguing statistics on the evolution of EV battery charging technology. Then, he gave the audience insights into the various plug-in solutions and the pros and cons of their topologies before delving into the technical details of integrated and non-integrated charging. He concluded the lecture by discussing the future of Electric Vehicles, which included polyphase charging and V2X(Vehicle-to-Everything) technologies.",
+        "Finally, there was a Q&A session, which had both online and in-person participants asking thought-provoking questions about the future of EV charging markets, the evolution of charging technology, and the details of EV battery regulations.",
+        "The University of Manchester IEEE PES SBC organizing committee expresses their sincere gratitude to Professor Emil Levi for his detailed and thought-provoking lecture. For additional information, including the biography of Professor Emil Levi and the abstract of his lectures, please visit the Manchester PES SBC website."
+      ],
+      "images": [
+        "ERLDC.jpg",
+        "con-1.jpg",
+        "poster.jpg",
+        "poster.jpg"
+      ],
+      "imagesCaption": [
+        "Figure 1. Event Flyer Levi talking about fully integrated on-board charging.Levi talking about fully integrated on-board charging Event Flyer Levi talking about fully integrated on-board charging.Levi talking about fully integrated on-board charging.",
+        "Figure 2. Elizabeth Michalenko, Chair IEEE PES SBC UoM, introducing Professor Emil Levi to the audience.",
+        "Figure 3. Professor Emil Levi talking about fully integrated on-board charging."
+      ],
+      "date": "25/05/2024",
+      "poster": "poster.jpg",
+      "registrationLink": "https://docs.google.com/forms/d/e/1FAIpQLSeSSvFlkr9eVlZ-z4En6eM9QUvqwR5yF9AFCRF0Qac4hV6FgQ/viewform",
+      "organizedByOrganization": "IEEE PES Chapter, IIT Patna",
+      "organizerPersons": "Kumar Abhinav, Priyesh Saini",
+      "organizersPositions": "Chair, Secretary at the IEEE PES Student Chapter"
+    },
+    {
+      "id": "6",
+      "title": "Optical Fiber-Based Plasmonic Sensors For Microorganism Detection",
+      "description": "Event is organized by IEEE Nanotechnology Council Student Chapter, Indian Institute of Technology, Patna on 15th July 2024, 6:00 PM (IST)",
+      "detailedTopDescription": [
+        "On Wednesday, 24th April 2024, the highly anticipated IEEE PES DAY Distinguished Lecture Program (DLP) titled “Electric Vehicle Battery Charging Using Plug-in Solutions” was delivered by Professor Emil Levi, Professor of Electric Machines and Drives at Liverpool John Moores University. The hybrid lecture, held in Engineering_A_3.053, at 13:00 BST, proved to be a highly informative and insightful event.",
+        "Professor Emil Levi, an IEEE Fellow and a PES Distinguished Lecturer, has won several awards including the Cyril Veinott award of the IEEE Power and Energy Society for 2009, the Best Paper award of the IEEE Trans. on Industrial Electronics for 2008, the European Power Electronics (EPE) Association “Outstanding Achievement Award” for 2014, and the “Professor Istvan Nagy Award” of the Power Electronics and Motion Control (PEMC) Council for 2018. Prof. Levi has served as a Co-Editor-in-Chief of the IEEE Trans. on Industrial Electronics in the 2009-2013 period and as Editor-in-Chief of the IET Electric Power Applications from 2010 until 2022. He is currently serving as Editor-in-Chief of the IEEE Trans. on Industrial Electronics (2019-2024).",
+        "The talk, organized and hosted by The University of Manchester IEEE PES SBC, piqued the interest of attendees from various backgrounds and universities. The event had 13 in-person attendees and 11 online attendees from across academia and industry."
+      ],
+      "detailedBottomDescription": [
+        "Professor Emil Levi’s presentation was a detailed overview of the latest developments and challenges regarding electric vehicle charging. Drawing from his extensive knowledge on battery charging innovations and worldwide electrification goals, he shared valuable insights and practical solutions.",
+        "Professor Levi started the Lecture by talking about the current trends in the EV industry and presented several intriguing statistics on the evolution of EV battery charging technology. Then, he gave the audience insights into the various plug-in solutions and the pros and cons of their topologies before delving into the technical details of integrated and non-integrated charging. He concluded the lecture by discussing the future of Electric Vehicles, which included polyphase charging and V2X(Vehicle-to-Everything) technologies.",
+        "Finally, there was a Q&A session, which had both online and in-person participants asking thought-provoking questions about the future of EV charging markets, the evolution of charging technology, and the details of EV battery regulations.",
+        "The University of Manchester IEEE PES SBC organizing committee expresses their sincere gratitude to Professor Emil Levi for his detailed and thought-provoking lecture. For additional information, including the biography of Professor Emil Levi and the abstract of his lectures, please visit the Manchester PES SBC website."
+      ],
+      "images": [
+        "ERLDC.jpg",
+        "con-1.jpg",
+        "poster.jpg",
+        "poster.jpg"
+      ],
+      "imagesCaption": [
+        "Figure 1. Event Flyer Levi talking about fully integrated on-board charging.Levi talking about fully integrated on-board charging Event Flyer Levi talking about fully integrated on-board charging.Levi talking about fully integrated on-board charging.",
+        "Figure 2. Elizabeth Michalenko, Chair IEEE PES SBC UoM, introducing Professor Emil Levi to the audience.",
+        "Figure 3. Professor Emil Levi talking about fully integrated on-board charging."
+      ],
+      "date": "15/07/2024",
+      "poster": "poster.jpg",
+      "registrationLink": "https://docs.google.com/forms/d/e/1FAIpQLSeSSvFlkr9eVlZ-z4En6eM9QUvqwR5yF9AFCRF0Qac4hV6FgQ/viewform",
+      "organizedByOrganization": "IEEE PES Chapter, IIT Patna",
+      "organizerPersons": "Kumar Abhinav, Priyesh Saini",
+      "organizersPositions": "Chair, Secretary at the IEEE PES Student Chapter"
+    },
+    {
+      "id": "7",
+      "title": "Optical Fiber-Based Plasmonic Sensors For Microorganism Detection",
+      "description": "Event is organized by IEEE Nanotechnology Council Student Chapter, Indian Institute of Technology, Patna on 22nd July 2024, 9:00 PM (IST)",
+      "detailedTopDescription": [
+        "On Wednesday, 24th April 2024, the highly anticipated IEEE PES DAY Distinguished Lecture Program (DLP) titled “Electric Vehicle Battery Charging Using Plug-in Solutions” was delivered by Professor Emil Levi, Professor of Electric Machines and Drives at Liverpool John Moores University. The hybrid lecture, held in Engineering_A_3.053, at 13:00 BST, proved to be a highly informative and insightful event.",
+        "Professor Emil Levi, an IEEE Fellow and a PES Distinguished Lecturer, has won several awards including the Cyril Veinott award of the IEEE Power and Energy Society for 2009, the Best Paper award of the IEEE Trans. on Industrial Electronics for 2008, the European Power Electronics (EPE) Association “Outstanding Achievement Award” for 2014, and the “Professor Istvan Nagy Award” of the Power Electronics and Motion Control (PEMC) Council for 2018. Prof. Levi has served as a Co-Editor-in-Chief of the IEEE Trans. on Industrial Electronics in the 2009-2013 period and as Editor-in-Chief of the IET Electric Power Applications from 2010 until 2022. He is currently serving as Editor-in-Chief of the IEEE Trans. on Industrial Electronics (2019-2024).",
+        "The talk, organized and hosted by The University of Manchester IEEE PES SBC, piqued the interest of attendees from various backgrounds and universities. The event had 13 in-person attendees and 11 online attendees from across academia and industry."
+      ],
+      "detailedBottomDescription": [
+        "Professor Emil Levi’s presentation was a detailed overview of the latest developments and challenges regarding electric vehicle charging. Drawing from his extensive knowledge on battery charging innovations and worldwide electrification goals, he shared valuable insights and practical solutions.",
+        "Professor Levi started the Lecture by talking about the current trends in the EV industry and presented several intriguing statistics on the evolution of EV battery charging technology. Then, he gave the audience insights into the various plug-in solutions and the pros and cons of their topologies before delving into the technical details of integrated and non-integrated charging. He concluded the lecture by discussing the future of Electric Vehicles, which included polyphase charging and V2X(Vehicle-to-Everything) technologies.",
+        "Finally, there was a Q&A session, which had both online and in-person participants asking thought-provoking questions about the future of EV charging markets, the evolution of charging technology, and the details of EV battery regulations.",
+        "The University of Manchester IEEE PES SBC organizing committee expresses their sincere gratitude to Professor Emil Levi for his detailed and thought-provoking lecture. For additional information, including the biography of Professor Emil Levi and the abstract of his lectures, please visit the Manchester PES SBC website."
+      ],
+      "images": [
+        "ERLDC.jpg",
+        "con-1.jpg",
+        "poster.jpg",
+        "poster.jpg"
+      ],
+      "imagesCaption": [
+        "Figure 1. Event Flyer Levi talking about fully integrated on-board charging.Levi talking about fully integrated on-board charging Event Flyer Levi talking about fully integrated on-board charging.Levi talking about fully integrated on-board charging.",
+        "Figure 2. Elizabeth Michalenko, Chair IEEE PES SBC UoM, introducing Professor Emil Levi to the audience.",
+        "Figure 3. Professor Emil Levi talking about fully integrated on-board charging."
+      ],
+      "date": "22/07/2024",
+      "poster": "poster.jpg",
+      "registrationLink": "https://docs.google.com/forms/d/e/1FAIpQLSeSSvFlkr9eVlZ-z4En6eM9QUvqwR5yF9AFCRF0Qac4hV6FgQ/viewform",
+      "organizedByOrganization": "IEEE PES Chapter, IIT Patna",
+      "organizerPersons": "Kumar Abhinav, Priyesh Saini",
+      "organizersPositions": "Chair, Secretary at the IEEE PES Student Chapter"
+    },
+    {
+      "id": "8",
+      "title": "Optical Fiber-Based Plasmonic Sensors For Microorganism Detection",
+      "description": "Event is organized by IEEE Nanotechnology Council Student Chapter, Indian Institute of Technology, Patna on 25th July 2024, 4:00 PM (IST)",
+      "detailedTopDescription": [
+        "On Wednesday, 24th April 2024, the highly anticipated IEEE PES DAY Distinguished Lecture Program (DLP) titled “Electric Vehicle Battery Charging Using Plug-in Solutions” was delivered by Professor Emil Levi, Professor of Electric Machines and Drives at Liverpool John Moores University. The hybrid lecture, held in Engineering_A_3.053, at 13:00 BST, proved to be a highly informative and insightful event.",
+        "Professor Emil Levi, an IEEE Fellow and a PES Distinguished Lecturer, has won several awards including the Cyril Veinott award of the IEEE Power and Energy Society for 2009, the Best Paper award of the IEEE Trans. on Industrial Electronics for 2008, the European Power Electronics (EPE) Association “Outstanding Achievement Award” for 2014, and the “Professor Istvan Nagy Award” of the Power Electronics and Motion Control (PEMC) Council for 2018. Prof. Levi has served as a Co-Editor-in-Chief of the IEEE Trans. on Industrial Electronics in the 2009-2013 period and as Editor-in-Chief of the IET Electric Power Applications from 2010 until 2022. He is currently serving as Editor-in-Chief of the IEEE Trans. on Industrial Electronics (2019-2024).",
+        "The talk, organized and hosted by The University of Manchester IEEE PES SBC, piqued the interest of attendees from various backgrounds and universities. The event had 13 in-person attendees and 11 online attendees from across academia and industry."
+      ],
+      "detailedBottomDescription": [
+        "Professor Emil Levi’s presentation was a detailed overview of the latest developments and challenges regarding electric vehicle charging. Drawing from his extensive knowledge on battery charging innovations and worldwide electrification goals, he shared valuable insights and practical solutions.",
+        "Professor Levi started the Lecture by talking about the current trends in the EV industry and presented several intriguing statistics on the evolution of EV battery charging technology. Then, he gave the audience insights into the various plug-in solutions and the pros and cons of their topologies before delving into the technical details of integrated and non-integrated charging. He concluded the lecture by discussing the future of Electric Vehicles, which included polyphase charging and V2X(Vehicle-to-Everything) technologies.",
+        "Finally, there was a Q&A session, which had both online and in-person participants asking thought-provoking questions about the future of EV charging markets, the evolution of charging technology, and the details of EV battery regulations.",
+        "The University of Manchester IEEE PES SBC organizing committee expresses their sincere gratitude to Professor Emil Levi for his detailed and thought-provoking lecture. For additional information, including the biography of Professor Emil Levi and the abstract of his lectures, please visit the Manchester PES SBC website."
+      ],
+      "images": [
+        "ERLDC.jpg",
+        "con-1.jpg",
+        "poster.jpg",
+        "poster.jpg"
+      ],
+      "imagesCaption": [
+        "Figure 1. Event Flyer Levi talking about fully integrated on-board charging.Levi talking about fully integrated on-board charging Event Flyer Levi talking about fully integrated on-board charging.Levi talking about fully integrated on-board charging.",
+        "Figure 2. Elizabeth Michalenko, Chair IEEE PES SBC UoM, introducing Professor Emil Levi to the audience.",
+        "Figure 3. Professor Emil Levi talking about fully integrated on-board charging."
+      ],
+      "date": "25/07/2024",
+      "poster": "poster.jpg",
+      "registrationLink": "https://docs.google.com/forms/d/e/1FAIpQLSeSSvFlkr9eVlZ-z4En6eM9QUvqwR5yF9AFCRF0Qac4hV6FgQ/viewform",
+      "organizedByOrganization": "IEEE PES Chapter, IIT Patna",
+      "organizerPersons": "Kumar Abhinav, Priyesh Saini",
+      "organizersPositions": "Chair, Secretary at the IEEE PES Student Chapter"
     }
   ]
 }

@@ -10,16 +10,12 @@ import TwoLabelHeader from "./Utils/TwoLabelHeader";
 import { useEffect, useState } from "react";
 import { sortAndSeparateEvents } from "../data/utils/EventsSorted";
 import data from "../data/raw/events.json";
+import { useNavigate } from "react-router-dom";
 
 const Events = () => {
   const [pastEvents, setPastEvents] = useState([]);
   const [upcomingEvents, setUpcomingEvents] = useState([]);
-
-  const headerStyle = {
-    fontWeight: 700,
-    fontSize: "45px",
-    textAlign: "center",
-  };
+  const navigate = useNavigate();
 
   useEffect(() => {
     const sortedEvents = sortAndSeparateEvents(data.events);
@@ -69,6 +65,7 @@ const Events = () => {
                   "linear-gradient(270deg, rgb(252, 115, 60), rgb(252, 176, 76))",
                 color: "#000",
                 padding: "4px",
+                cursor: "pointer",
               }}
               contentArrowStyle={{
                 borderRight: "7px solid  rgb(252, 115, 60)",
@@ -78,16 +75,20 @@ const Events = () => {
                 background:
                   "linear-gradient(270deg, rgb(252, 115, 60), rgb(252, 176, 76))",
               }}
+              onTimelineElementClick={(e) => {
+                e.preventDefault();
+                const eventId = event.id; // Assuming event has an id property
+                navigate(`/detailedEventsPage?id=${eventId}`); // Redirect to the specified link
+              }}
             >
               <img
-                src={`/assets/events/${event.image}`}
+                src={`/assets/events/${event.poster}`}
                 alt=""
                 // className="col-md-12 p-0 m-0"
                 className="card-img-top"
               ></img>
             </VerticalTimelineElement>
           ))}
-          
         </VerticalTimeline>
       </div>
     </div>

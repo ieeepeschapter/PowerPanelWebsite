@@ -10,6 +10,7 @@ import Footer from "./components/Footer";
 import { useEffect, useState } from "react";
 import Loader from "./components/Utils/Loader";
 import Admin from "./components/Admin";
+import DetailedEvent from "./components/DetailedEvent";
 
 function App() {
   const textFamilyStyle = {
@@ -31,11 +32,12 @@ function App() {
       ) : (
         <>
           <Navbar />
-          <Routes>
+          <Routes >
             <Route path="/" element={<Home />} />
             <Route path="/members" element={<Team />} />
             <Route path="/sponsors" element={<Sponsors />} />
             <Route path="/events" element={<Events />} />
+            <Route path="/detailedEventsPage" element={<DetailedEvent />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/admin" element={<Admin />} />
           </Routes>

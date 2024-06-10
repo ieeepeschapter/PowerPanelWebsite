@@ -11,10 +11,11 @@
     "chapterName": "IEEE PES Student Branch Chapter",
     "chapterShortName": "IEEE PES",
     "navLeftLogo": "logo1.jpg",
-    "navRightLogo": "logo1.jpg",
     "logo": "horrizontal.png",
     "footerLogo": "combination_bottom.png",
     "quickLinksLogo": "kolkata.png",
+    "introRightLogo": "logo1.jpg",
+
     "aboutUs": "The IEEE Power and Energy Student Branch Chapter at the Indian Institute of Technology Patna is a dynamic community of enthusiastic members. Established in 2024, our chapter is committed to fostering a collaborative environment for academic and professional growth. Our future plans include hosting technical workshops and seminars featuring industry experts to enhance technical knowledge and stay abreast of the latest advancements in power and energy. We aim to promote research and innovation by encouraging members to engage in cutting-edge projects and providing platforms to present their findings at conferences and competitions. \nAdditionally, we are focused on establishing strong ties with industry leaders through internships, mentorship programs, and collaborative projects to bridge the gap between academia and industry. Community outreach and sustainability initiatives are also a priority, with plans to launch programs aimed at promoting sustainable energy solutions and raising awareness about energy conservation in local communities. Furthermore, we will offer career development resources, including resume workshops, interview preparation sessions, and networking events, to help members achieve their professional goals. Through these initiatives, we aim to position our chapter as a leading student branch within the Kolkata PES Chapter, contributing significantly to the field of power and energy.\n",
     "abouUsSmall": "IEEE is the world's largest technical professional organization Dedicated to advancing technology for the benefit of humanity. The IEEE Power & Energy Society (IEEE PES), formerly the IEEE Power Engineering Society, is the oldest society of the Institute of Electrical and Electronics Engineers (IEEE) focused on the scientific and engineering knowledge about electric power and energy.",
     "contactEmail": "ieeepeschapter@iitp.ac.in"
