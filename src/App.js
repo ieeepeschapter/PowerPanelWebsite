@@ -11,6 +11,7 @@ import { useEffect, useState } from "react";
 import Loader from "./components/Utils/Loader";
 import Admin from "./components/Admin";
 import DetailedEvent from "./components/DetailedEvent";
+import ScrollToTop from "./components/Utils/ScrollToTop";
 
 function App() {
   const textFamilyStyle = {
@@ -22,11 +23,12 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setLoaderLoading(false);
-    }, 20);
+    }, 2000);
   }, []);
 
   return (
     <div style={textFamilyStyle}>
+      <ScrollToTop/>
       {loaderLoading ? (
         <Loader />
       ) : (

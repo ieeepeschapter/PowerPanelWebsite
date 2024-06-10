@@ -6,15 +6,20 @@ const HomeIntro = ({ chapterDetails }) => {
       className="card container my-4"
       style={{
         background: "linear-gradient(to right, #f7faf8, #fafafa)",
+        justifyContent: "center",
+        alignItems: "center",
+        display: "flex",
       }}
     >
       <div className="row px-2 py-4">
-        <div className="col-md-4">
-          <img src={`./assets/home/${chapterDetails.logo}`} />
-        </div>
+        <img
+          className="col-md-3"
+          src={`./assets/home/${chapterDetails.logo}`}
+          style={{objectFit:"contain"}}
+        />
 
         <div
-          className="col-md-4 my-3"
+          className="col-md-6 my-3"
           style={{
             display: "flex",
             flexDirection: "column",
@@ -28,7 +33,8 @@ const HomeIntro = ({ chapterDetails }) => {
 
         <img
           src={`./assets/home/${chapterDetails.introRightLogo}`}
-          className="col-md-4"
+          className="col-md-3"
+          style={{objectFit:"contain"}}
         ></img>
       </div>
     </div>
