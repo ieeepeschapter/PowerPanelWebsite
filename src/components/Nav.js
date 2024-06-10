@@ -44,13 +44,7 @@ const Navbar = () => {
           >
             {homeData.chapterDetails.chapterShortName}
           </p>
-          <img
-            src={`./assets/home/${homeData.chapterDetails.navRightLogo}`}
-            alt="Logo"
-            width="auto"
-            height="40"
-            className="d-inline-block align-text-top"
-          ></img>
+          
         </div>
         <button
           className="navbar-toggler"

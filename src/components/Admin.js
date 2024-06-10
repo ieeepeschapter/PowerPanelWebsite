@@ -80,21 +80,25 @@ const JsonRenderer = ({ jsonData, setJsonData }) => {
     if (Array.isArray(data)) {
       return (
         <div style={{ width: "100%" }}>
-            <div class="table-responsive">
-              <table className="table table-bordered" style={{minWidth:"max-content"}}>
-                <thead>
-                  <tr>
-                    {Object.keys(data[0] || {}).map((key, idx) => (
-                      <th key={key}>{key}</th>
-                    ))}
-                    <th>Actions</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {data.map((item, index) => (
-                    <tr key={index}>
-                      {Object.keys(item).map((key) =>
-                        Array.isArray(item[key]) === true ? (
+          <div class="table-responsive">
+            <table
+              className="table table-bordered"
+              style={{ minWidth: "max-content" }}
+            >
+              <thead>
+                <tr>
+                  {Object.keys(data[0] || {}).map((key, idx) => (
+                    <th key={key}>{key}</th>
+                  ))}
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                {data.map((item, index) => (
+                  <tr key={index}>
+                    {Object.keys(item).map((key) =>
+                      Array.isArray(item[key]) === true ? (
+                        <td key={key}>
                           <div class="table-responsive">
                             <table className="table table-bordered table-striped">
                               <thead>
@@ -162,44 +166,45 @@ const JsonRenderer = ({ jsonData, setJsonData }) => {
                               </tbody>
                             </table>
                           </div>
-                        ) : (
-                          <td key={key}>
-                            <textarea
-                              type="text"
-                              className="form-control"
-                              value={item[key]}
-                              onChange={(e) =>
-                                handleInputChange(
-                                  `${path}.${index}.${key}`,
-                                  e.target.value
-                                )
-                              }
-                            />
-                          </td>
-                        )
-                      )}
-                      <td>
-                        <button
-                          className="btn btn-danger"
-                          onClick={() => handleRemoveItem(path, index)}
-                        >
-                          X
-                        </button>
-                      </td>
-                    </tr>
-                  ))}
-                  <tr>
-                    <td colSpan={Object.keys(data[0] || {}).length + 1}>
+                        </td>
+                      ) : (
+                        <td key={key}>
+                          <textarea
+                            type="text"
+                            className="form-control"
+                            value={item[key]}
+                            onChange={(e) =>
+                              handleInputChange(
+                                `${path}.${index}.${key}`,
+                                e.target.value
+                              )
+                            }
+                          />
+                        </td>
+                      )
+                    )}
+                    <td>
                       <button
-                        className="btn btn-primary"
-                        onClick={() => handleAddItem(path)}
+                        className="btn btn-danger"
+                        onClick={() => handleRemoveItem(path, index)}
                       >
-                        +
+                        X
                       </button>
                     </td>
                   </tr>
-                </tbody>
-              </table>
+                ))}
+                <tr>
+                  <td colSpan={Object.keys(data[0] || {}).length + 1}>
+                    <button
+                      className="btn btn-primary"
+                      onClick={() => handleAddItem(path)}
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       );

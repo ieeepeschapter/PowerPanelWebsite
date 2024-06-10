@@ -30,7 +30,7 @@ const HomeSlider = ({ sliders }) => {
             >
               <img
                 src={`./assets/home/${slider.image}`}
-                className="d-block w-100"
+                style={{ width: "100%", aspectRatio: 16 / 9 }}
                 alt="..."
               ></img>
             </div>

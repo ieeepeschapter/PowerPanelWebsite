@@ -1,6 +1,6 @@
 import React from "react";
 
-const HomeIntro = ({chapterDetails}) => {
+const HomeIntro = ({ chapterDetails }) => {
   return (
     <div
       className="card container my-4"
@@ -14,7 +14,7 @@ const HomeIntro = ({chapterDetails}) => {
         </div>
 
         <div
-          className="col-md-8 my-3"
+          className="col-md-4 my-3"
           style={{
             display: "flex",
             flexDirection: "column",
@@ -25,6 +25,11 @@ const HomeIntro = ({chapterDetails}) => {
           <h3>{chapterDetails.chapterName}</h3>
           <h4>Indian Institute of Technology Patna</h4>
         </div>
+
+        <img
+          src={`./assets/home/${chapterDetails.introRightLogo}`}
+          className="col-md-4"
+        ></img>
       </div>
     </div>
   );
