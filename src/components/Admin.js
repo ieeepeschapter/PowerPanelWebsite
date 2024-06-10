@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 
 import homeData from "../data/raw/home.json";
 import eventData from "../data/raw/events.json";
@@ -60,7 +60,7 @@ const JsonRenderer = ({ jsonData, setJsonData }) => {
     console.log({ path, pathArray, lastKey, obj, newItem });
   };
 
-  // Handler to remove an item from an array
+  // Handler toRR an item from an array
   const handleRemoveItem = (path, index) => {
     const newData = { ...jsonData };
     const pathArray = path.split(".");
@@ -79,124 +79,128 @@ const JsonRenderer = ({ jsonData, setJsonData }) => {
   const renderData = (data, path = "") => {
     if (Array.isArray(data)) {
       return (
-        <div class="table-responsive">
-          <table className="table table-bordered">
-            <thead>
-              <tr>
-                {Object.keys(data[0] || {}).map((key) => (
-                  <th key={key}>{key}</th>
-                ))}
-                <th>Actions</th>
-              </tr>
-            </thead>
-            <tbody>
-              {data.map((item, index) => (
-                <tr key={index}>
-                  {Object.keys(item).map((key) =>
-                    Array.isArray(item[key]) === true ? (
-                      <div class="table-responsive">
-                        <table className="table table-bordered table-striped">
-                          <thead>
-                            <tr>
-                              <th scope="col">Data</th>
-                              <th scope="col">Action</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            {item[key].map((it, idx) => {
-                              return (
+        <div style={{ width: "100%" }}>
+            <div class="table-responsive">
+              <table className="table table-bordered" style={{minWidth:"max-content"}}>
+                <thead>
+                  <tr>
+                    {Object.keys(data[0] || {}).map((key, idx) => (
+                      <th key={key}>{key}</th>
+                    ))}
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {data.map((item, index) => (
+                    <tr key={index}>
+                      {Object.keys(item).map((key) =>
+                        Array.isArray(item[key]) === true ? (
+                          <div class="table-responsive">
+                            <table className="table table-bordered table-striped">
+                              <thead>
                                 <tr>
-                                  <td>
-                                    <textarea
-                                      type="text"
-                                      className="form-control"
-                                      value={it}
-                                      onChange={(e) => {
-                                        item[key][idx] = e.target.value;
-                                        let newVal = item[key];
-                                        handleInputChange(
-                                          `${path}.${index}.${key}`,
-                                          newVal
-                                        );
-                                      }}
-                                    />
-                                  </td>
-                                  <td>
+                                  <th scope="col">Data</th>
+                                  <th scope="col">Action</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                {item[key].map((it, idx) => {
+                                  return (
+                                    <tr>
+                                      <td>
+                                        <textarea
+                                          type="text"
+                                          className="form-control"
+                                          value={it}
+                                          onChange={(e) => {
+                                            item[key][idx] = e.target.value;
+                                            let newVal = item[key];
+                                            handleInputChange(
+                                              `${path}.${index}.${key}`,
+                                              newVal
+                                            );
+                                          }}
+                                        />
+                                      </td>
+                                      <td>
+                                        <button
+                                          className="btn btn-danger"
+                                          onClick={() => {
+                                            item[key].splice(idx, 1);
+                                            handleInputChange(
+                                              `${path}.${index}.${key}`,
+                                              item[key]
+                                            );
+                                          }}
+                                        >
+                                          X
+                                        </button>
+                                      </td>
+                                    </tr>
+                                  );
+                                })}
+                                <tr>
+                                  <td
+                                    colSpan={
+                                      Object.keys(data[0] || {}).length + 1
+                                    }
+                                  >
                                     <button
-                                      className="btn btn-danger"
+                                      className="btn btn-primary"
                                       onClick={() => {
-                                        item[key].splice(idx, 1);
+                                        item[key].push("");
                                         handleInputChange(
                                           `${path}.${index}.${key}`,
                                           item[key]
                                         );
                                       }}
                                     >
-                                      Remove
+                                      +
                                     </button>
                                   </td>
                                 </tr>
-                              );
-                            })}
-                            <tr>
-                              <td
-                                colSpan={Object.keys(data[0] || {}).length + 1}
-                              >
-                                <button
-                                  className="btn btn-primary"
-                                  onClick={() => {
-                                    item[key].push("");
-                                    handleInputChange(
-                                      `${path}.${index}.${key}`,
-                                      item[key]
-                                    );
-                                  }}
-                                >
-                                  Add Item
-                                </button>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    ) : (
-                      <td key={key}>
-                        <textarea
-                          type="text"
-                          className="form-control"
-                          value={item[key]}
-                          onChange={(e) =>
-                            handleInputChange(
-                              `${path}.${index}.${key}`,
-                              e.target.value
-                            )
-                          }
-                        />
+                              </tbody>
+                            </table>
+                          </div>
+                        ) : (
+                          <td key={key}>
+                            <textarea
+                              type="text"
+                              className="form-control"
+                              value={item[key]}
+                              onChange={(e) =>
+                                handleInputChange(
+                                  `${path}.${index}.${key}`,
+                                  e.target.value
+                                )
+                              }
+                            />
+                          </td>
+                        )
+                      )}
+                      <td>
+                        <button
+                          className="btn btn-danger"
+                          onClick={() => handleRemoveItem(path, index)}
+                        >
+                          X
+                        </button>
                       </td>
-                    )
-                  )}
-                  <td>
-                    <button
-                      className="btn btn-danger"
-                      onClick={() => handleRemoveItem(path, index)}
-                    >
-                      Remove
-                    </button>
-                  </td>
-                </tr>
-              ))}
-              <tr>
-                <td colSpan={Object.keys(data[0] || {}).length + 1}>
-                  <button
-                    className="btn btn-primary"
-                    onClick={() => handleAddItem(path)}
-                  >
-                    Add Item
-                  </button>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+                    </tr>
+                  ))}
+                  <tr>
+                    <td colSpan={Object.keys(data[0] || {}).length + 1}>
+                      <button
+                        className="btn btn-primary"
+                        onClick={() => handleAddItem(path)}
+                      >
+                        +
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+          </div>
         </div>
       );
     } else if (typeof data === "object" && data !== null) {
@@ -394,13 +398,15 @@ const Admin = () => {
   };
 
   return (
-    <div className="container">
-      <h1>Modify App content</h1>
-      <JsonDropdown onSelect={handleJsonSelect} />
-      <JsonRenderer jsonData={jsonData} setJsonData={setJsonData} />
-      <button className="btn btn-primary my-3" onClick={handleCopyJson}>
-        Copy JSON Data
-      </button>
+    <div>
+      <div className="m-4">
+        <h1>Modify App content</h1>
+        <JsonDropdown onSelect={handleJsonSelect} />
+        <JsonRenderer jsonData={jsonData} setJsonData={setJsonData} />
+        <button className="btn btn-primary my-3" onClick={handleCopyJson}>
+          Copy JSON Data
+        </button>
+      </div>
     </div>
   );
 };
