@@ -23,6 +23,27 @@
       "organizedByOrganization": "IEEE PES Chapter, IIT Patna",
       "organizerPersons": "Kumar Abhinav, Priyesh Saini",
       "organizersPositions": "Chair, Secretary at the IEEE PES Student Chapter"
+    },
+    {
+      "id": "2",
+      "title": "Multi Machine Simulation and Wide Area Power System Stabilizer Design for Power Systems",
+      "description": "Talk is organized by IEEE Power Energy Society Student Branch Chapter, Indian Institute of Technology, Patna on 23rd  July 2024, 5:00 PM (IST)",
+      "detailedTopDescription": [
+        "Short Abstract: This talk covers the simulation technique for a multimachine power system, primarily focusing on the current balance method. This technique aids in dynamic analysis of power systems by considering the modeling of all synchronous generators. Additionally, the presentation will discuss the nature of low-frequency oscillations (LFOs) based on the designed model, with particular emphasis on inter-area oscillation (IAO) damping. To address IAO modes, a two-stage lead-lag power system design, based on IEEE standard power systems, will also be covered."
+      ],
+      "detailedBottomDescription": [
+        "About Speaker: Dr. Abhineet Prakash (Member, IEEE) received his B.E. degree in Electrical and Electronics Engineering from Rajiv Gandhi Proudyogiki Vishwavidyalaya, Bhopal, India, in 2015, and his M.Tech. degree in Power Systems from the National Institute of Technology, Patna, India, in 2018. He completed his Ph.D. in Electrical Engineering at the Indian Institute of Technology, Patna, under the supervision of Dr. S. K. Parida (Associate Professor, IIT Patna).\nFor his M.Tech. work, Dr. Prakash received the Certificate of Excellence Award from the National Institute of Technology, Patna, in 2018. He was also awarded the prestigious POSOCO Power System Award 2023 in the doctoral category by Grid Controller of India Ltd, Govt. of India. Additionally, he is one of the four recipients worldwide of the IEEE PES Outstanding Doctoral Dissertation Award 2024.\nDr. Prakash has served as an assistant professor in the Electrical Engineering Department at NIT Calicut. He also worked as a control system engineer at the HVDC/FACTS Center of Excellence, General Electric (GE) Renewable Energy, in Noida. Additionally, he spent six months as a visiting researcher at Khalifa University, Abu Dhabi, United Arab Emirates, under the supervision of Prof. Mohamed Shawky El Moursi.\nHis research interests include power system operation, control, and stability, with a focus on high penetration of renewable energy sources.\n"
+      ],
+      "images": [
+        ""
+      ],
+      "imagesCaption": [],
+      "date": "23/072024",
+      "poster": "talk1",
+      "registrationLink": "",
+      "organizedByOrganization": "IEEE PES Chapter, IIT Patna",
+      "organizerPersons": "Kumar Abhinav, Rohit Ray",
+      "organizersPositions": "Chair, Vice chair at the IEEE PES Student Chapter"
     }
   ]
 }
