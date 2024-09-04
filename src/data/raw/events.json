@@ -51,12 +51,31 @@
       "description": "Event is organized by IEEE Power Energy Society Student Branch Chapter, Indian Institute of Technology, Patna on 14th  August 2024, 5:00 PM (IST)",
       "detailedTopDescription": [],
       "detailedBottomDescription": [
-        "About speaker: Dr. Mrityunjay Kumar Mishra is an accomplished researcher with a Ph.D. from Indian Institute of Technology, Patna Patna and is currently a postdoctoral researcher at Khalifa University. His expertise lies in power system optimization and the application of game theory in demand-side management, making him a leading voice in the field of smart grid technology."
+        "About Speaker: Dr. Mrityunjay Kumar Mishra is an accomplished researcher with a Ph.D. from Indian Institute of Technology, Patna Patna and is currently a postdoctoral researcher at Khalifa University. His expertise lies in power system optimization and the application of game theory in demand-side management, making him a leading voice in the field of smart grid technology."
       ],
       "images": [],
       "imagesCaption": [],
       "date": "15/08/2024",
       "poster": "poster2.png",
+      "registrationLink": "",
+      "organizedByOrganization": "IEEE PES Chapter, IIT Patna",
+      "organizerPersons": "Kumar Abhinav, Priyesh Saini",
+      "organizersPositions": "Chair, Secretary at the IEEE PES Student Chapter"
+    },
+    {
+      "id": "4",
+      "title": "Response Standardization of Inverter Based Resources (IBRs) for Unbalanced Systems",
+      "description": "Event is organized by IEEE Power Energy Society Student Branch Chapter, Indian Institute of Technology, Patna on 30th  August 2024, 5:00 PM (IST)",
+      "detailedTopDescription": [
+        "Shor Abstract: nverter-Based Resources (IBRs) are increasingly being integrated into existing power transmission and distribution systems. While much research has been done on modeling, analyzing, and controlling IBRs in balanced systems, there is a lack of similar work for unbalanced systems. With grid codes becoming stricter for fault ride-through and the commonality of unbalanced faults, this talk will explore the challenges, possible solutions, and future research directions for standardizing IBR response in coordination with other control and protection systems."
+      ],
+      "detailedBottomDescription": [
+        "About Speaker: Dr. Pankaj D. Achlerkar is an Assistant Professor at IIT Bhubaneswar. He earned his B.E. in Electrical, Electronics, and Power from the Government College of Engineering, Aurangabad, his M.Tech. in Power System Engineering from IIT Bhubaneswar, and his Ph.D. from IIT Delhi. His research interests focus on grid integration of distributed generators, microgrids, and signal processing applications to power systems. He is also a recipient of the POSOCO Power System Award in 2016, highlighting his contributions to the field."
+      ],
+      "images": [],
+      "imagesCaption": [],
+      "date": "30/08/2024",
+      "poster": "poster3.png",
       "registrationLink": "",
       "organizedByOrganization": "IEEE PES Chapter, IIT Patna",
       "organizerPersons": "Kumar Abhinav, Priyesh Saini",
